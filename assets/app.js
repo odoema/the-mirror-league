@@ -29,6 +29,8 @@ document.getElementById("contact-form")?.addEventListener("submit",e=>{
 
   function show(index) {
     active = (index + slides.length) % slides.length;
+    const track = carousel.querySelector('.hero-slides');
+    if (track) track.style.transform = `translate3d(-${active * (100 / slides.length)}%, 0, 0)`;
     slides.forEach((slide, i) => {
       const selected = i === active;
       slide.classList.toggle('is-active', selected);
