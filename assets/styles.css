@@ -278,3 +278,153 @@ h2{overflow-wrap:break-word}
   .development-photo .visual-caption{font-size:7px}
 }
 @media(min-width:701px) and (max-width:900px){.hero-carousel{min-height:1000px}}
+
+
+/* ===== THE MIRROR LEAGUE — AfriShield-inspired corporate refinement ===== */
+:root{
+  --navy:#06172d;--navy2:#0a2547;--blue:#153d68;
+  --gold:#cba653;--gold2:#f0d995;--paper:#f4f2ec;
+  --ink:#10233c;--muted:#697789;
+  --radius-card:24px;--radius-panel:30px;--radius-pill:999px;
+}
+body{background:var(--paper);color:var(--ink);font-size:14px}
+.topline{height:32px;padding-inline:clamp(18px,5.5vw,88px);font-size:8px;letter-spacing:.19em;background:#020b18;color:#e8d39b}
+.header{height:86px;padding-inline:clamp(18px,5.5vw,88px);background:rgba(4,17,35,.97);border-bottom:1px solid rgba(203,166,83,.42);box-shadow:0 12px 34px rgba(3,13,28,.18)}
+.brand img{width:196px;max-height:70px}
+.nav{gap:clamp(12px,1.8vw,27px)}
+.nav a{font-size:9px;letter-spacing:.075em;text-transform:uppercase;color:#dce4ed}
+.nav a:hover{color:var(--gold2)}
+.nav-cta,.btn-gold{border-radius:var(--radius-pill);padding:13px 20px;box-shadow:0 8px 22px rgba(203,166,83,.16)}
+.nav-cta{background:linear-gradient(120deg,#b88d3e,#efd58c);color:#07172e;border:0}
+.nav-cta:hover{background:#f4dfaa;color:#07172e}
+.hero-carousel{min-height:clamp(690px,88vh,880px);background:#041329}
+.hero-slide>.hero-overlay{background:linear-gradient(90deg,rgba(2,11,25,.99) 0%,rgba(3,15,33,.91) 37%,rgba(3,15,33,.26) 68%,rgba(3,15,33,.08) 100%),linear-gradient(0deg,rgba(2,11,25,.68),transparent 42%)}
+.hero-slide .hero-content{max-width:620px}
+.hero-slide .eyebrow{display:flex;align-items:center;gap:10px;color:#e4c779;letter-spacing:.2em}
+.hero-slide .eyebrow i{width:30px;height:2px;margin:0;background:linear-gradient(90deg,var(--gold),transparent)}
+.slide-overline{color:#f0d995;text-transform:uppercase}
+.hero-slide .hero-content h1{font-size:clamp(50px,6vw,86px);letter-spacing:-.055em;line-height:.94;text-shadow:0 6px 28px rgba(0,0,0,.22)}
+.hero-slide .hero-content h1 em{color:#e8c878}
+.hero-slide .hero-lead{font-size:14px;color:#d5deea;line-height:1.85}
+.hero-visual img{border:1px solid rgba(231,201,131,.62);border-radius:var(--radius-panel);box-shadow:0 30px 75px rgba(0,0,0,.42),0 0 0 10px rgba(203,166,83,.055);background:#081b35}
+.hero-visual img.art-wide{object-fit:cover}
+.hero-controls{gap:10px}
+.hero-arrow,.hero-pause{border-radius:var(--radius-pill);width:40px;height:40px;background:rgba(5,20,41,.8);border-color:rgba(240,217,149,.55);backdrop-filter:blur(10px)}
+.hero-dot{border-radius:var(--radius-pill)}
+.hero-dot.is-active{border-radius:var(--radius-pill)}
+.hero-bottom{font-size:8px;letter-spacing:.23em;color:#e0e5ed}
+.ticker{background:#d4b15f;color:#07172e;padding:11px 0;font-size:10px;letter-spacing:.19em}
+.ticker b{color:#fff}
+
+/* Compact proof-point strip, using only established Mirror League structure. */
+.mirror-stats{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border-bottom:1px solid #e5e0d4;padding:0 clamp(20px,9vw,140px)}
+.mirror-stat{padding:27px 28px;display:flex;align-items:center;gap:17px;border-right:1px solid #e8e3d9}
+.mirror-stat:last-child{border-right:0}
+.mirror-stat strong{font:800 clamp(28px,3vw,42px)/1 "Poppins",sans-serif;color:#b18a3f;letter-spacing:-.06em}
+.mirror-stat span{font-size:9px;line-height:1.5;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#42536a}
+
+/* Corporate editorial rhythm: generous white space and clear section boundaries. */
+.section{padding-block:clamp(72px,8vw,116px)}
+.intro{background:#f7f6f2}
+.intro h2,.philosophy h2,.africa h2,.section-title h2,.development h2,.partnership h2,.contact h2{letter-spacing:-.045em}
+.kicker,.section-index{letter-spacing:.19em}
+.large-copy{font-size:17px;line-height:1.8;color:#34465e}
+.quote-band{border-left:3px solid var(--gold);background:#eeece5;border-radius:0 var(--radius-card) var(--radius-card) 0;padding:18px 24px}
+.quote-band p{font-size:16px;line-height:1.55}
+.mission-vision{gap:1px;background:rgba(203,166,83,.32);padding:1px}
+.mv-card{padding:clamp(34px,5vw,68px);background:#071b35;border-radius:var(--radius-card)}
+.mv-card+.mv-card{border-left:0}
+.philosophy{background:#e9edf1;color:#10233c}
+.philosophy h2{color:#10233c}
+.philosophy .body-copy{color:#59697b}
+.philosophy .values{border-top:1px solid rgba(9,32,60,.2)}
+.philosophy .values article{border-bottom:1px solid rgba(9,32,60,.16);padding:20px 0}
+.philosophy .values h3{color:#10233c}
+.philosophy .values p{color:#617084}
+.philosophy .values article>b{color:#a78032}
+.africa{background:#f7f6f2}
+.africa-image{border-radius:var(--radius-panel);box-shadow:16px 16px 0 #d9c99f}
+.africa-image>img{border-radius:var(--radius-panel)}
+.image-stamp{border-radius:var(--radius-card) 0 0 0}
+.ecosystem,.innovation{background:#e9edf1}
+.section-title{margin-bottom:38px}
+.section-title>p{line-height:1.8}
+.layers{gap:16px;background:transparent;border:0}
+.layer{border:1px solid #d8dee5;border-radius:var(--radius-card);padding:clamp(24px,3vw,36px);background:#fff;box-shadow:0 12px 34px rgba(16,35,60,.045);transition:transform .25s,box-shadow .25s}
+.layer:hover{transform:translateY(-5px);box-shadow:0 18px 42px rgba(16,35,60,.1)}
+.layer-feature{background:linear-gradient(145deg,#071a34,#12365d);border-color:rgba(203,166,83,.55);color:#fff}
+.layer h3{font-size:22px;letter-spacing:-.03em}
+.layer p{line-height:1.8}
+.development{background:linear-gradient(135deg,#06172d,#0c2c51);border-top:1px solid rgba(203,166,83,.22);border-bottom:1px solid rgba(203,166,83,.22)}
+.development-photo{border-radius:var(--radius-panel);box-shadow:16px 16px 0 rgba(203,166,83,.18)}
+.age-grid{border-radius:var(--radius-card);overflow:hidden;background:rgba(255,255,255,.035)}
+.impact-grid{border:0;gap:14px}
+.impact-grid article{background:#fff;border:1px solid #e1e4e8;border-radius:var(--radius-card);padding:28px;min-height:205px;box-shadow:0 10px 28px rgba(16,35,60,.04)}
+.impact-grid article h3{letter-spacing:-.025em}
+.tour{border-radius:var(--radius-panel);margin:clamp(24px,4vw,56px);padding-inline:clamp(28px,7vw,100px)}
+.tour-list span{font-size:9px}
+.innovation-grid{gap:14px}
+.innovation-grid>div{background:#fff;border:1px solid #dfe4e9;border-top:3px solid var(--gold);border-radius:var(--radius-card);padding:24px;box-shadow:0 10px 28px rgba(16,35,60,.04)}
+.innovation-grid h3{letter-spacing:-.02em}
+.roadmap{background:linear-gradient(135deg,#041329,#0b2b50)}
+.timeline{gap:12px;border-top:1px solid rgba(203,166,83,.45)}
+.timeline article{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-card);padding:26px 22px 22px;min-height:260px}
+.timeline article:before{top:-5px;left:24px;box-shadow:0 0 0 6px #0b2544}
+.timeline h3{font-size:19px;line-height:1.3}
+.timeline p{line-height:1.8}
+.partnership{background:#092346}
+.partner-tags span{border-radius:var(--radius-pill);padding:10px 15px}
+.founder{background:#e9edf1}
+.founder-mark{border-radius:var(--radius-panel);box-shadow:14px 14px 0 #d8c99f}
+.contact{background:#fff}
+.contact-detail{padding:18px 0}
+.contact-form{background:#f5f6f7;border:1px solid #e3e7eb;border-radius:var(--radius-panel);padding:clamp(22px,3vw,36px)}
+.contact-form input,.contact-form textarea,.contact-form select{border-radius:13px;padding:14px 15px;border-color:#dce1e7;background:#fff}
+.contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{outline:2px solid rgba(203,166,83,.5);border-color:var(--gold)}
+.footer{background:#020b18}
+.footer-top{padding-bottom:32px}
+.footer-bottom{font-size:9px}
+
+/* Rounded, consistent interaction language. */
+:where(.btn-gold,.nav-cta,.hero-arrow,.hero-pause,.contact-form button,.contact-form input[type="submit"]){border-radius:var(--radius-pill)!important}
+:where(.layer,.impact-grid article,.innovation-grid>div,.timeline article,.contact-form,.founder-mark,.africa-image,.development-photo){overflow:hidden}
+:where(.layer,.impact-grid article,.innovation-grid>div,.timeline article){transition:transform .22s ease,box-shadow .22s ease}
+.btn-gold:focus-visible,.nav a:focus-visible,.nav-cta:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #e6c66f;outline-offset:4px}
+
+@media(max-width:900px){
+ .mirror-stats{padding-inline:5%}
+ .mirror-stat{padding:22px 16px}
+ .tour{margin:24px;padding:70px 7%}
+ .timeline article{min-height:220px}
+}
+@media(max-width:700px){
+ .topline{height:28px}
+ .header{height:72px}
+ .mirror-stats{grid-template-columns:1fr;padding:0 7%}
+ .mirror-stat{padding:17px 0;border-right:0;border-bottom:1px solid #e8e3d9}
+ .mirror-stat:last-child{border-bottom:0}
+ .mirror-stat strong{font-size:30px;min-width:48px}
+ .mirror-stat span{font-size:8px}
+ .hero-slide>.hero-overlay{background:linear-gradient(180deg,rgba(2,11,25,.12) 0%,rgba(2,11,25,.35) 24%,rgba(2,11,25,.96) 48%,rgba(2,11,25,.99) 100%)}
+ .hero-visual img{border-radius:20px}
+ .mv-card{border-radius:20px}
+ .layers{gap:12px}
+ .layer{border-radius:20px}
+ .impact-grid{gap:10px}
+ .impact-grid article{border-radius:19px;padding:21px 18px}
+ .tour{margin:16px;border-radius:22px;padding:62px 7%}
+ .innovation-grid>div{border-radius:19px;padding:19px}
+ .timeline{gap:10px;border-top:0}
+ .timeline article{min-height:0;border-radius:19px;padding:22px 18px}
+ .timeline article:before{display:none}
+ .founder-mark{border-radius:22px}
+ .contact-form{border-radius:22px}
+ .footer{padding-inline:7%}
+}
+@media(max-width:420px){
+ .impact-grid,.innovation-grid,.timeline{grid-template-columns:1fr}
+ .hero-slide .hero-content h1{letter-spacing:-.045em}
+}
+@media(prefers-reduced-motion:reduce){
+ .layer,.impact-grid article,.innovation-grid>div,.timeline article{transition:none}
+}
