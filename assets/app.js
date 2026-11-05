@@ -15,7 +15,7 @@ contactForm?.addEventListener("submit",async e=>{
   button.innerHTML='Sending enquiry…';
   status.textContent="Sending your enquiry. Please keep this page open.";
   try{
-    const response=await fetch("https://formsubmit.co/ajax/themirrorleague@gmail.com",{
+    const response=await fetch("https://formsubmit.co/ajax/odoema@gmail.com",{
       method:"POST",
       headers:{"Accept":"application/json","Content-Type":"application/json"},
       body:JSON.stringify(Object.fromEntries(new FormData(form).entries()))
