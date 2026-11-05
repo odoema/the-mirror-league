@@ -428,3 +428,99 @@ body{background:var(--paper);color:var(--ink);font-size:14px}
 @media(prefers-reduced-motion:reduce){
  .layer,.impact-grid article,.innovation-grid>div,.timeline article{transition:none}
 }
+
+
+/* ===== IMAGE-FIRST RESPONSIVE DISPLAY — preserve complete artwork ===== */
+/* Global rule: images retain their natural proportions and never stretch. */
+img{max-width:100%;height:auto}
+.hero-visual{
+  display:flex;align-items:center;justify-content:center;
+  min-width:0;min-height:0;overflow:visible;
+}
+.hero-visual img{
+  display:block;width:auto;height:auto;max-width:100%;max-height:100%;
+  object-fit:contain!important;object-position:center!important;
+  aspect-ratio:auto!important;border-radius:24px;
+}
+/* Do not crop wide or portrait artwork to fill a decorative box. */
+.hero-visual img.art-wide,.hero-visual img.art-tall{
+  width:auto!important;height:auto!important;
+  max-width:100%!important;max-height:100%!important;
+  object-fit:contain!important;aspect-ratio:auto!important;
+}
+.hero-visual img.art-wide{width:100%!important}
+.hero-visual img.art-tall{height:100%!important}
+.africa-image,.development-photo{
+  display:flex;align-items:center;justify-content:center;
+  height:auto!important;min-height:0!important;max-height:none!important;
+  overflow:hidden;border-radius:24px;background:#081b35!important;
+}
+.africa-image{aspect-ratio:850/665}
+.development-photo{aspect-ratio:306/548}
+.africa-image>img,.development-photo>img{
+  display:block;width:100%;height:100%;max-width:100%;max-height:100%;
+  object-fit:contain!important;object-position:center!important;
+  flex:0 1 auto;
+}
+.africa-image>img{aspect-ratio:850/665}
+.development-photo>img{aspect-ratio:306/548}
+.africa-image .image-stamp,.africa-image .visual-caption,
+.development-photo .visual-caption{position:absolute}
+.brand img,.footer-top img,.founder-mark img{
+  display:block;width:auto;height:auto;max-width:100%;max-height:100%;
+  object-fit:contain!important;object-position:center!important;
+}
+/* Reserve space for image and text independently at desktop widths. */
+@media(min-width:901px){
+  .hero-slide .hero-content{width:44%;max-width:590px}
+  .hero-visual{width:45%!important;height:min(68%,590px)!important;right:6%!important}
+  .hero-visual img.art-wide{width:100%!important;height:auto!important}
+  .hero-visual img.art-tall{width:auto!important;height:100%!important}
+}
+/* Tablet: image gets its own upper region; copy starts below it. */
+@media(min-width:701px) and (max-width:900px){
+  .hero-carousel{min-height:980px!important}
+  .hero-slide{align-items:flex-start!important}
+  .hero-visual,.hero-slide:nth-child(n) .hero-visual{
+    top:24px!important;left:7%!important;right:7%!important;bottom:auto!important;
+    width:auto!important;height:350px!important;margin:0!important;transform:none!important;
+  }
+  .hero-visual img.art-wide{width:auto!important;height:100%!important;max-width:100%!important}
+  .hero-visual img.art-tall{width:auto!important;height:100%!important}
+  .hero-slide .hero-content{width:100%!important;margin:0!important;padding:410px 7% 155px!important}
+  .africa-image{width:100%;max-width:640px;margin-inline:auto}
+  .development-photo{width:min(100%,420px);margin-inline:auto}
+}
+/* Mobile: image is a separate, fully visible panel above the slide copy. */
+@media(max-width:700px){
+  .hero-carousel{min-height:900px!important}
+  .hero-slide{align-items:flex-start!important}
+  .hero-visual,.hero-slide:nth-child(n) .hero-visual{
+    position:absolute!important;top:18px!important;left:7%!important;right:7%!important;
+    bottom:auto!important;width:auto!important;height:250px!important;
+    margin:0!important;transform:none!important;opacity:1!important;
+  }
+  .hero-visual img.art-wide,.hero-visual img.art-tall{
+    width:auto!important;height:100%!important;max-width:100%!important;max-height:100%!important;
+    object-fit:contain!important;
+  }
+  .hero-slide .hero-content{width:100%!important;margin:0!important;padding:300px 7% 158px!important}
+  .hero-slide .hero-content h1{overflow-wrap:break-word;word-break:normal}
+  .africa-image{width:100%;aspect-ratio:4/3;min-height:0!important}
+  .africa-image>img{width:100%;height:100%;object-fit:contain!important}
+  .development-photo{width:min(100%,300px);aspect-ratio:306/548;min-height:0!important}
+  .development-photo>img{width:100%;height:100%;object-fit:contain!important}
+  .africa-copy,.development-content{min-width:0}
+  .africa-image .image-stamp{z-index:2}
+  .hero-controls{bottom:64px}
+  .hero-bottom{bottom:20px}
+}
+@media(max-width:420px){
+  .hero-carousel{min-height:920px!important}
+  .hero-visual,.hero-slide:nth-child(n) .hero-visual{height:225px!important}
+  .hero-slide .hero-content{padding-top:275px!important}
+}
+/* Prevent adjacent sections, labels and captions from covering image content. */
+figure{position:relative;min-width:0}
+.africa-image .image-stamp{pointer-events:none}
+.visual-caption{max-width:calc(100% - 28px);overflow-wrap:anywhere}
