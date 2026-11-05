@@ -1059,3 +1059,94 @@ figure{position:relative;min-width:0}
 @media(prefers-reduced-motion:reduce){
   .hero-slide{transition:none!important}
 }
+
+
+/* ===== SLIDER IMAGE ALIGNMENT FIX — one responsive image stage for every slide =====
+   All source artwork uses the same centred contain-frame. The wide/tall class no
+   longer changes its CSS sizing, so changing slides cannot shift or crop the art. */
+.hero-carousel .hero-slide .hero-visual{
+  position:absolute!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  box-sizing:border-box!important;
+  min-width:0!important;
+  min-height:0!important;
+  overflow:hidden!important;
+  top:6%!important;
+  right:4%!important;
+  bottom:12%!important;
+  left:auto!important;
+  width:48%!important;
+  height:auto!important;
+  margin:0!important;
+  padding:16px!important;
+  transform:none!important;
+}
+.hero-carousel .hero-slide .hero-visual img,
+.hero-carousel .hero-slide .hero-visual img.art-wide,
+.hero-carousel .hero-slide .hero-visual img.art-tall{
+  position:relative!important;
+  inset:auto!important;
+  display:block!important;
+  flex:0 1 auto!important;
+  width:100%!important;
+  height:100%!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:100%!important;
+  max-height:100%!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  aspect-ratio:auto!important;
+  margin:0 auto!important;
+  border-radius:3px!important;
+}
+@media(min-width:1081px){
+  .hero-carousel .hero-slide .hero-visual{
+    top:6%!important;right:4%!important;bottom:12%!important;left:auto!important;
+    width:48%!important;height:auto!important;padding:18px!important;
+  }
+}
+@media(min-width:701px) and (max-width:1080px){
+  .hero-carousel{min-height:960px!important}
+  .hero-carousel .hero-slide .hero-visual{
+    top:24px!important;right:8%!important;bottom:auto!important;left:8%!important;
+    width:auto!important;height:390px!important;padding:12px!important;
+  }
+  .hero-carousel .hero-slide .hero-visual img,
+  .hero-carousel .hero-slide .hero-visual img.art-wide,
+  .hero-carousel .hero-slide .hero-visual img.art-tall{
+    width:100%!important;height:100%!important;
+  }
+  .hero-carousel .hero-slide .hero-content{
+    width:84%!important;max-width:760px!important;
+    margin:0 auto!important;padding:455px 0 150px!important;
+  }
+  .hero-carousel .hero-controls{left:8%!important}
+  .hero-carousel .hero-bottom{left:8%!important;right:8%!important}
+}
+@media(max-width:700px){
+  .hero-carousel{min-height:940px!important}
+  .hero-carousel .hero-slide .hero-visual{
+    top:16px!important;right:6%!important;bottom:auto!important;left:6%!important;
+    width:auto!important;height:250px!important;padding:9px!important;
+    margin:0!important;transform:none!important;
+  }
+  .hero-carousel .hero-slide .hero-visual img,
+  .hero-carousel .hero-slide .hero-visual img.art-wide,
+  .hero-carousel .hero-slide .hero-visual img.art-tall{
+    width:100%!important;height:100%!important;
+    max-width:100%!important;max-height:100%!important;
+    object-fit:contain!important;object-position:center!important;
+  }
+  .hero-carousel .hero-slide .hero-content{
+    width:88%!important;max-width:none!important;
+    margin:0 auto!important;padding:305px 0 166px!important;
+  }
+}
+@media(max-width:390px){
+  .hero-carousel{min-height:960px!important}
+  .hero-carousel .hero-slide .hero-visual{height:220px!important}
+  .hero-carousel .hero-slide .hero-content{padding-top:275px!important}
+}
