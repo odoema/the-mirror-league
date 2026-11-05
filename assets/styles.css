@@ -1387,3 +1387,73 @@ html{scroll-padding-top:150px}
  #contact{scroll-margin-top:112px}
  .contact{padding-top:clamp(88px,18vw,116px)!important}
 }
+
+
+/* MOBILE CONTACT FORM VISIBILITY FIX
+   Keep the complete form, including its submit action, above the footer. */
+#contact,
+.contact-grid,
+.contact-form{
+  height:auto!important;
+  min-height:0!important;
+}
+.contact-form{
+  overflow:visible!important;
+  align-content:start!important;
+}
+.contact-form button[type="submit"]{
+  display:inline-flex!important;
+  position:relative!important;
+  z-index:2!important;
+  min-height:54px!important;
+  margin:8px 0 4px!important;
+  visibility:visible!important;
+  opacity:1;
+}
+@media(max-width:700px){
+  #contact{
+    padding-bottom:110px!important;
+    overflow:visible!important;
+  }
+  #contact .contact-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    align-items:start!important;
+    gap:30px!important;
+  }
+  #contact .contact-form{
+    display:grid!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    padding:24px 20px 30px!important;
+    margin:0!important;
+    overflow:visible!important;
+    gap:16px!important;
+  }
+  #contact .contact-form label,
+  #contact .contact-form textarea,
+  #contact .contact-form select,
+  #contact .contact-form input{
+    min-width:0!important;
+  }
+  #contact .contact-form button[type="submit"]{
+    width:100%!important;
+    justify-self:stretch!important;
+    min-height:58px!important;
+    margin:8px 0 6px!important;
+    padding:17px 20px!important;
+    justify-content:center!important;
+    gap:14px!important;
+  }
+  #contact .form-status{
+    display:block!important;
+    min-height:2.5em;
+    padding-bottom:4px;
+  }
+  .footer{
+    position:relative!important;
+    margin-top:0!important;
+    clear:both!important;
+  }
+}
