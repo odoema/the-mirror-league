@@ -1,46 +1,26 @@
-# The Mirror League — Official Website
+# The Mirror League — official website
 
-**We Are The Mirror. We Are The Future.**
+A responsive, source-grounded public website for The Mirror League, the proposed Pan-African basketball and youth-development ecosystem.
 
-Source-grounded public website for The Mirror League, Africa’s proposed Pan-African basketball and youth innovation platform.
+## Design system
+- Premium navy and championship-gold foundation, with the green, red, blue and white accents reflected in the official logo.
+- Interlocking editorial sections, cinematic hero, refined navigation, responsive cards and a mobile-first layout.
+- Official logo asset: `assets/logo-small.png`.
+- Local visual assets extracted from the user's supplied Mirror League concept-note artwork: `assets/mirror-uniform-concept.webp` and `assets/african-basketball-concept.webp`. These are labelled as concept artwork / uniform concept, not presented as photographs of operational league events or actual teams.
+- No remote stock-photo dependency; all site imagery is stored locally in the repository.
 
-## Content Principles
+## Content integrity
+The Mirror League is presented as a proposed ecosystem. The roadmap, academy pathways, Africa Mirror Tour, and Opening Season 2027 are described as strategic targets or concepts, not confirmed operating programmes, events, partnerships, franchises or fixtures.
 
-- All claims are drawn from the official concept notes, brand identity guide, master strategic plan and foundation blueprint.
-- Proposed partnerships, franchises, academies and events are clearly framed as future phases — never presented as already operational.
-- Contact and registration details are reconciled against the business name registration and domain receipt.
+## Run locally
+Open `index.html` in a browser or serve the folder with any static web server.
 
-## Local Preview
+## Deploy
+The repository uses GitHub Pages via `.github/workflows/pages.yml`. The custom domain is `themirrorleague.com`.
 
-Open `index.html` in a browser or serve the folder:
+The contact form prepares an email in the visitor's mail application to `odoema@gmail.com`; it does not submit data to a server.
 
-```bash
-npx serve .
-```
 
-## Deployment (GitHub Pages)
+## Visual QA and responsive testing
 
-1. Push this repository to GitHub under the account that owns `themirrorleague.com`.
-2. Enable GitHub Pages (Settings → Pages → Deploy from branch `main` / root, or use the included workflow).
-3. Point the domain DNS (A/CNAME records) to GitHub Pages as instructed by Namecheap / GitHub.
-
-## Structure
-
-```
-├── index.html
-├── css/styles.css
-├── js/main.js
-├── assets/          (add official logo & campaign imagery here)
-└── .github/workflows/pages.yml
-```
-
-## Brand Notes
-
-- Primary colours: Deep navy, African gold, supporting green/blue/red from the Brand Identity Guide.
-- Typography: Inter (UI) + Playfair Display (headlines).
-- Positioning: “Africa and the world co-creating the future of basketball.” Not an imitation of any existing league.
-
----
-
-© 2026 Brian Odoch Emmanuel / The Mirror League  
-Confidential source documents remain internal.
+The current source was rendered in a Chromium sandbox at desktop (1440×960), tablet (768×1024), and mobile (390×844) viewports. The five hero slides were individually activated at each viewport. Checks covered JavaScript errors, image loading, horizontal overflow, and slide navigation. The tablet hero switches to a stacked image/text composition to prevent artwork and headings from colliding.

@@ -1,369 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The Mirror League — Africa’s future basketball & youth innovation platform. We Are The Mirror. We Are The Future." />
-  <meta name="theme-color" content="#0a1628" />
-  <title>THE MIRROR LEAGUE | Africa’s Future Plays Here</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a35">
+  <meta name="description" content="The Mirror League is a proposed Pan-African basketball and youth innovation ecosystem connecting African talent with global basketball systems, technology, leadership and culture.">
+  <meta property="og:title" content="The Mirror League — We Are The Mirror. We Are The Future.">
+  <meta property="og:description" content="Africa's future basketball and youth innovation platform. Built in Africa. Seen by the world.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo-small.png">
+  <title>The Mirror League | Africa's Future Plays Here</title>
+  <link rel="icon" type="image/png" href="assets/logo-small.png">
+  <link rel="apple-touch-icon" href="assets/logo-small.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <header class="site-header" id="header">
-    <div class="container header-inner">
-      <a href="#hero" class="logo">
-        <span class="logo-mark">ML</span>
-        <span class="logo-text">THE MIRROR LEAGUE</span>
-      </a>
-      <nav class="nav" id="nav">
-        <a href="#philosophy">Philosophy</a>
-        <a href="#ecosystem">Ecosystem</a>
-        <a href="#why-africa">Why Africa</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#impact">Impact</a>
-        <a href="#contact" class="nav-cta">Connect</a>
-      </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <div class="topline"><span>AFRICA'S GAME. THE WORLD'S STAGE.</span><span>OPENING SEASON TARGET · 2027</span></div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="The Mirror League home"><img src="assets/logo-small.png" alt="The Mirror League official logo"></a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#vision">The vision</a><a href="#philosophy">Our philosophy</a><a href="#ecosystem">The ecosystem</a>
+      <a href="#development">Development</a><a href="#roadmap">Roadmap</a><a href="#partners">Partners</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Connect with us <span>↗</span></a>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="container hero-content">
-      <p class="hero-eyebrow">Africa’s Future Basketball & Youth Innovation Platform</p>
-      <h1 class="hero-title">
-        We Are The Mirror.<br />
-        <span class="gold">We Are The Future.</span>
-      </h1>
-      <p class="hero-sub">
-        A Pan-African basketball and youth development ecosystem connecting African talent with global systems, innovation, leadership and cultural exchange.
-      </p>
-      <div class="hero-actions">
-        <a href="#philosophy" class="btn btn-primary">Discover the Vision</a>
-        <a href="#roadmap" class="btn btn-outline">See the Roadmap</a>
+  <main>
+    <section class="hero hero-carousel" id="home" aria-roledescription="carousel" aria-label="The Mirror League philosophy">
+      <div class="hero-slides">
+        <article class="hero-slide is-active" data-slide="0" aria-hidden="false">
+          <div class="hero-overlay" aria-hidden="true"></div>
+          <div class="hero-visual"><img class="art-wide" src="assets/african-basketball-concept.webp" alt="Basketball concept artwork representing African talent and possibility" fetchpriority="high"></div>
+          <div class="hero-content">
+            <div class="eyebrow"><i></i> THE MIRROR PHILOSOPHY · 01 / 05</div>
+            <p class="slide-overline">THE REFLECTION</p>
+            <h1>WE ARE THE<br><em>MIRROR.</em></h1>
+            <p class="hero-lead">Africa already has the talent. The Mirror reflects the greatness, identity and possibility that have always been here.</p>
+            <div class="hero-actions"><a class="btn-gold" href="#vision">Discover the vision <b>↗</b></a><a class="btn-ghost" href="#philosophy">Explore our philosophy <b>↓</b></a></div>
+          </div>
+        </article>
+        <article class="hero-slide" data-slide="1" aria-hidden="true">
+          <div class="hero-overlay" aria-hidden="true"></div>
+          <div class="hero-visual"><img class="art-tall" src="assets/mirror-uniform-portrait.webp" alt="Mirror League uniform concept artwork, symbolising identity and belonging" loading="lazy"></div>
+          <div class="hero-content">
+            <div class="eyebrow"><i></i> THE MIRROR PHILOSOPHY · 02 / 05</div>
+            <p class="slide-overline">AFRICAN IDENTITY</p>
+            <h1>OUR GAME.<br><em>OUR IDENTITY.</em></h1>
+            <p class="hero-lead">We are not here to imitate another system. We are building an African-led basketball culture rooted in who we are and what we can become.</p>
+            <div class="hero-actions"><a class="btn-gold" href="#philosophy">Explore our values <b>↗</b></a><a class="btn-ghost" href="#africa">The African opportunity <b>↓</b></a></div>
+          </div>
+        </article>
+        <article class="hero-slide" data-slide="2" aria-hidden="true">
+          <div class="hero-overlay" aria-hidden="true"></div>
+          <div class="hero-visual"><img class="art-wide" src="assets/african-basketball-concept.webp" alt="Basketball concept artwork representing the next generation of African players" loading="lazy"></div>
+          <div class="hero-content">
+            <div class="eyebrow"><i></i> THE MIRROR PHILOSOPHY · 03 / 05</div>
+            <p class="slide-overline">DEVELOP THE PERSON</p>
+            <h1>MORE THAN<br><em>THE GAME.</em></h1>
+            <p class="hero-lead">Develop athletes. Grow leaders. Create pathways for young people to learn, lead, innovate and thrive on and beyond the court.</p>
+            <div class="hero-actions"><a class="btn-gold" href="#development">Explore development <b>↗</b></a><a class="btn-ghost" href="#impact">Beyond the court <b>↓</b></a></div>
+          </div>
+        </article>
+        <article class="hero-slide" data-slide="3" aria-hidden="true">
+          <div class="hero-overlay" aria-hidden="true"></div>
+          <div class="hero-visual"><img class="art-tall" src="assets/mirror-uniform-portrait.webp" alt="Mirror League kit concept, a visual expression of a shared African basketball identity" loading="lazy"></div>
+          <div class="hero-content">
+            <div class="eyebrow"><i></i> THE MIRROR PHILOSOPHY · 04 / 05</div>
+            <p class="slide-overline">BUILD THE ECOSYSTEM</p>
+            <h1>ONE GAME.<br><em>MANY<br>POSSIBILITIES.</em></h1>
+            <p class="hero-lead">Basketball is the starting point. Education, technology, media, enterprise and culture can grow around it as one connected ecosystem.</p>
+            <div class="hero-actions"><a class="btn-gold" href="#ecosystem">Explore the ecosystem <b>↗</b></a><a class="btn-ghost" href="#innovation">See the possibilities <b>↓</b></a></div>
+          </div>
+        </article>
+        <article class="hero-slide" data-slide="4" aria-hidden="true">
+          <div class="hero-overlay" aria-hidden="true"></div>
+          <div class="hero-visual"><img class="art-wide" src="assets/african-basketball-concept.webp" alt="African basketball concept artwork symbolising a future built by the next generation" loading="lazy"></div>
+          <div class="hero-content">
+            <div class="eyebrow"><i></i> THE MIRROR PHILOSOPHY · 05 / 05</div>
+            <p class="slide-overline">THE FUTURE WE CREATE</p>
+            <h1>WE ARE THE<br><em>FUTURE.</em></h1>
+            <p class="hero-lead">A Pan-African vision, built with young people and partners, connecting local potential to opportunities across Africa and the world.</p>
+            <div class="hero-actions"><a class="btn-gold" href="#roadmap">See the roadmap <b>↗</b></a><a class="btn-ghost" href="#contact">Build with us <b>↓</b></a></div>
+          </div>
+        </article>
       </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- Philosophy / Brand Values -->
-  <section class="section philosophy" id="philosophy">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">The Central Philosophy</p>
-        <h2>Africa already possesses exceptional talent.<br />The Mirror reveals it.</h2>
-        <p class="lead">
-          The Mirror League is built on the belief that Africa needs the systems, infrastructure, culture, leadership and global opportunities to reveal the greatness that already exists.
-        </p>
+      <div class="hero-side"><span class="hero-current">01</span><span>AFRICA'S FUTURE PLAYS HERE</span><span>BUILT IN AFRICA · SEEN BY THE WORLD</span></div>
+      <div class="hero-controls" aria-label="Slide controls">
+        <button class="hero-arrow hero-prev" type="button" aria-label="Previous philosophy slide">←</button>
+        <div class="hero-dots" role="group" aria-label="Choose a philosophy slide">
+          <button class="hero-dot is-active" type="button" aria-label="Slide 1: The reflection" aria-current="true"></button>
+          <button class="hero-dot" type="button" aria-label="Slide 2: African identity"></button>
+          <button class="hero-dot" type="button" aria-label="Slide 3: Develop the person"></button>
+          <button class="hero-dot" type="button" aria-label="Slide 4: Build the ecosystem"></button>
+          <button class="hero-dot" type="button" aria-label="Slide 5: The future we create"></button>
+        </div>
+        <button class="hero-arrow hero-next" type="button" aria-label="Next philosophy slide">→</button>
+        <button class="hero-pause" type="button" aria-label="Pause slideshow" aria-pressed="false">Ⅱ</button>
       </div>
+      <div class="hero-bottom"><span>WE ARE THE MIRROR</span><span class="line"></span><span>WE ARE THE FUTURE</span></div>
+    </section>
 
-      <div class="values-grid">
-        <div class="value-card">
-          <div class="value-icon">01</div>
-          <h3>Excellence</h3>
-          <p>Elite African basketball development systems that match the world’s highest standards.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">02</div>
-          <h3>Unity</h3>
-          <p>Pan-African collaboration that turns individual talent into continental strength.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">03</div>
-          <h3>Innovation</h3>
-          <p>Future-focused sports systems, technology and performance analytics.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">04</div>
-          <h3>Identity</h3>
-          <p>African pride and culture at the core of every uniform, court and story.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">05</div>
-          <h3>Opportunity</h3>
-          <p>Youth empowerment pathways that extend far beyond the basketball court.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">06</div>
-          <h3>Global Vision</h3>
-          <p>International competition, partnerships and cultural exchange on equal terms.</p>
+    <section class="ticker" aria-label="The Mirror League values"><div>EXCELLENCE <b>✦</b> UNITY <b>✦</b> INNOVATION <b>✦</b> IDENTITY <b>✦</b> OPPORTUNITY <b>✦</b> GLOBAL VISION <b>✦</b> EXCELLENCE <b>✦</b> UNITY <b>✦</b> INNOVATION <b>✦</b> IDENTITY <b>✦</b></div></section>
+
+    <section class="intro section" id="vision">
+      <div class="section-index">01 / THE VISION</div>
+      <div class="intro-main">
+        <p class="kicker">AFRICA'S FUTURE BASKETBALL & YOUTH INNOVATION PLATFORM</p>
+        <h2>Not simply a league.<br><em>A new ecosystem for African greatness.</em></h2>
+        <p class="large-copy">The Mirror League is a proposed Pan-African basketball and youth development ecosystem designed to connect African talent with global basketball systems, innovation, technology, leadership and cultural exchange.</p>
+        <p>It brings basketball, education, technology, media, entrepreneurship and diplomacy into one future-focused African platform — developing world-class athletes, empowering young people, strengthening communities and creating new economic opportunities across the continent.</p>
+        <div class="quote-band"><span>“</span><p>Africa and the world co-creating the future of basketball.</p></div>
+      </div>
+    </section>
+
+    <section class="mission-vision">
+      <div class="mv-card"><span class="label">OUR MISSION</span><h3>Develop the ecosystem.<br><em>Empower the generation.</em></h3><p>To develop a Pan-African basketball and youth innovation ecosystem that empowers African youth through sports, leadership, technology, entrepreneurship and global collaboration.</p></div>
+      <div class="mv-card"><span class="label">OUR VISION</span><h3>Position Africa at<br><em>the centre of the game.</em></h3><p>To position Africa as one of the world's leading basketball development ecosystems while creating sustainable pathways for youth empowerment, international collaboration and economic growth.</p></div>
+    </section>
+
+    <section class="philosophy section" id="philosophy">
+      <div class="section-index">02 / THE MIRROR PHILOSOPHY</div>
+      <div class="philosophy-grid">
+        <div><p class="kicker">WHAT THE MIRROR REPRESENTS</p><h2>See the greatness.<br><em>Build the systems.</em></h2><p class="body-copy">The Mirror is an identity and a belief in African potential. It reflects what is possible when talent meets opportunity, when local identity connects with global knowledge, and when young people can see themselves as creators of the future — not spectators waiting for it.</p><p class="body-copy">The Mirror League is not an imitation of the NBA. It is an African-led platform for Africa and the world to co-create the future of basketball.</p></div>
+        <div class="values">
+          <article><b>01</b><div><h3>Excellence</h3><p>Elite African basketball development.</p></div><span>↗</span></article>
+          <article><b>02</b><div><h3>Unity</h3><p>Pan-African collaboration.</p></div><span>↗</span></article>
+          <article><b>03</b><div><h3>Innovation</h3><p>Future-focused sports systems.</p></div><span>↗</span></article>
+          <article><b>04</b><div><h3>Identity</h3><p>African pride and culture.</p></div><span>↗</span></article>
+          <article><b>05</b><div><h3>Opportunity</h3><p>Youth empowerment.</p></div><span>↗</span></article>
+          <article><b>06</b><div><h3>Global vision</h3><p>International competition and collaboration.</p></div><span>↗</span></article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Mission & Vision -->
-  <section class="section mission-vision">
-    <div class="container">
-      <div class="mv-grid">
-        <div class="mv-card">
-          <p class="eyebrow">Mission</p>
-          <h3>To develop a Pan-African basketball and youth innovation ecosystem that empowers African youth through sports, leadership, technology, entrepreneurship and global collaboration.</h3>
-        </div>
-        <div class="mv-card">
-          <p class="eyebrow">Vision</p>
-          <h3>To position Africa as one of the world’s leading basketball development ecosystems while creating sustainable pathways for youth empowerment, international collaboration and economic growth.</h3>
-        </div>
+    <section class="africa section">
+      <figure class="africa-image"><img src="assets/african-basketball-concept.webp" alt="Concept artwork of African basketball players in national kits" loading="lazy"><div class="image-stamp">AFRICA<br><strong>RISES</strong></div><figcaption class="visual-caption">THE MIRROR LEAGUE · CONCEPT ARTWORK</figcaption></figure>
+      <div class="africa-copy"><p class="kicker">WHY AFRICA. WHY NOW.</p><h2>The talent is here.<br><em>The opportunity must be too.</em></h2><p>Africa's athletic talent, cultural influence, creativity and entrepreneurial potential are extraordinary. Yet many athletes and communities continue to face gaps in the systems that turn potential into opportunity.</p>
+        <ul class="check-list"><li>Structured athlete development systems</li><li>Advanced sports infrastructure and elite coaching</li><li>Global exposure and scouting pathways</li><li>Sports technology and performance analytics</li><li>Sustainable sports economies and careers</li></ul>
+        <p class="closing-line">The Mirror League seeks to bridge these gaps through excellence, opportunity and international collaboration — while promoting positive African narratives on a global stage.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Three-Layer Ecosystem -->
-  <section class="section ecosystem" id="ecosystem">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">The Ecosystem</p>
-        <h2>Three connected layers.<br />One continental movement.</h2>
-      </div>
-
+    <section class="ecosystem section" id="ecosystem">
+      <div class="section-index">03 / THE ECOSYSTEM</div>
+      <div class="section-title"><div><p class="kicker">MORE THAN THE GAME</p><h2>One platform.<br><em>Connected possibilities.</em></h2></div><p>The Mirror League is designed as an interconnected sports, development, media and innovation ecosystem. Each layer strengthens the others.</p></div>
       <div class="layers">
-        <article class="layer">
-          <div class="layer-number">01</div>
-          <div class="layer-content">
-            <h3>Mirror Identity</h3>
-            <p>African city identity, team culture, fan engagement, adapted playing philosophies and international development relationships. The cultural and competitive face of the movement.</p>
-          </div>
-        </article>
-        <article class="layer">
-          <div class="layer-number">02</div>
-          <div class="layer-content">
-            <h3>Mirror Development Academy</h3>
-            <p>The talent-development engine. Structured pathways for U14, U18, U23 and professional athletes, supported by coaching, scouting, leadership training and sports science.</p>
-          </div>
-        </article>
-        <article class="layer">
-          <div class="layer-number">03</div>
-          <div class="layer-content">
-            <h3>Events & Entertainment</h3>
-            <p>Mirror Showcase Games, continental tours, music, technology exhibitions, media production and cultural experiences that turn basketball into a living African entertainment property.</p>
-          </div>
-        </article>
+        <article class="layer layer-feature"><div class="layer-no">LAYER 01</div><div class="layer-icon">◈</div><div><h3>Mirror Identity</h3><p>Build local belonging and continental fan culture through African team identities, city pride, adapted team philosophies, coaching exchange, training camps and digital storytelling.</p><span class="layer-tag">IDENTITY · CULTURE · FANDOM</span></div></article>
+        <article class="layer"><div class="layer-no">LAYER 02</div><div class="layer-icon">◎</div><div><h3>Development Academy</h3><p>The talent-development engine: grassroots pathways, coaching, scouting, sports science, leadership and education — supporting players as they progress.</p><span class="layer-tag">U14 · U18 · U23 · PROFESSIONAL</span></div></article>
+        <article class="layer"><div class="layer-no">LAYER 03</div><div class="layer-icon">✦</div><div><h3>Events &amp; Entertainment</h3><p>Showcase games, tours, finals, music, technology showcases and creator experiences make African basketball a compelling cultural and media property.</p><span class="layer-tag">LIVE EVENTS · MEDIA · CULTURE</span></div></article>
       </div>
-    </div>
-  </section>
+      <p class="status-note">These are proposed components of the long-term ecosystem. League operations, franchise relationships and events will be developed in phases.</p>
+    </section>
 
-  <!-- Why Africa -->
-  <section class="section why-africa" id="why-africa">
-    <div class="container">
-      <div class="why-grid">
-        <div class="why-text">
-          <p class="eyebrow">Why Africa</p>
-          <h2>The youngest continent.<br />Some of the greatest athletic talent on Earth.</h2>
-          <p>
-            Africa represents one of the youngest and fastest-growing populations in the world, with extraordinary untapped athletic talent, cultural influence, creativity and entrepreneurial potential.
-          </p>
-          <p>
-            Basketball continues to grow rapidly across the continent, yet many athletes and communities still lack structured development systems, advanced infrastructure, global exposure pathways, elite coaching and sustainable sports economies.
-          </p>
-          <p>
-            The Mirror League exists to bridge these gaps — creating a modern African basketball ecosystem rooted in excellence, opportunity and international collaboration.
-          </p>
-        </div>
-        <div class="why-stats">
-          <div class="stat">
-            <span class="stat-number">60%+</span>
-            <span class="stat-label">of Africa’s population is under 25</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">54</span>
-            <span class="stat-label">nations. One continental vision.</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">∞</span>
-            <span class="stat-label">untapped potential still waiting to be revealed</span>
-          </div>
-        </div>
+    <section class="development section" id="development">
+      <figure class="development-photo"><img src="assets/mirror-uniform-portrait.webp" alt="Proposed Mirror League kit worn by a player" loading="lazy"><figcaption class="visual-caption">PROPOSED MIRROR KIT · UNIFORM CONCEPT</figcaption></figure>
+      <div class="development-content"><p class="kicker">THE NEXT GENERATION</p><h2>Develop athletes.<br><em>Grow leaders.</em></h2><p>The Mirror League is designed to develop young Africans not only as athletes, but also as leaders, innovators, creators and future professionals.</p>
+        <div class="age-grid"><div><strong>U14</strong><span>Foundations</span></div><div><strong>U18</strong><span>Development</span></div><div><strong>U23</strong><span>Performance</span></div><div><strong>PRO</strong><span>Professional pathway</span></div></div>
+        <p class="small-copy">The proposed youth development system includes basketball opportunities, leadership and mentorship, educational partnerships, digital and media skills, entrepreneurship, community outreach and gender inclusion initiatives. A women's academy track is included in the strategic plan.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Youth Impact -->
-  <section class="section youth">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">Youth Impact</p>
-        <h2>Not only athletes.<br />Leaders, innovators and creators.</h2>
-      </div>
-      <div class="youth-grid">
-        <div class="youth-item">Basketball development pathways</div>
-        <div class="youth-item">Leadership training & mentorship</div>
-        <div class="youth-item">Educational partnerships</div>
-        <div class="youth-item">Digital & media skills</div>
-        <div class="youth-item">Entrepreneurship engagement</div>
-        <div class="youth-item">Community outreach & inclusion</div>
-        <div class="youth-item">Positive youth identity</div>
-        <div class="youth-item">Sports science & analytics</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Roadmap -->
-  <section class="section roadmap" id="roadmap">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">Implementation Roadmap</p>
-        <h2>From vision to continental league.<br />Four deliberate phases.</h2>
-        <p class="lead">These are the intended stages of development. None of the later phases are claimed as complete until they are publicly announced.</p>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker">1</div>
-          <div class="timeline-content">
-            <h3>The Mirror Summit</h3>
-            <p>Establish the vision publicly. Engage embassies, sponsors, sports bodies, universities and cultural partners. Host a foundational sports, youth leadership and innovation conference.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">2</div>
-          <div class="timeline-content">
-            <h3>Mirror Showcase Game</h3>
-            <p>Demonstrate the concept through a major exhibition basketball event featuring African talent, youth engagement, entertainment and media coverage. Validate demand and storytelling.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">3</div>
-          <div class="timeline-content">
-            <h3>Mirror Academy Network</h3>
-            <p>Establish regional academies and structured pathways (U14–U23–Professional). Train coaches, build scouting networks and embed leadership and sports science.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">4</div>
-          <div class="timeline-content">
-            <h3>Continental League Expansion</h3>
-            <p>Progress toward formal Pan-African competition, broadcasting, commercial partnerships and a championship ecosystem that belongs to the continent.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Impact & Partnerships -->
-  <section class="section impact" id="impact">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">Broader Impact</p>
-        <h2>Sports. Diplomacy. Economy. Culture.</h2>
-      </div>
-
+    <section class="impact section">
+      <div class="section-index">04 / IMPACT & OPPORTUNITY</div>
+      <div class="section-title"><div><p class="kicker">BEYOND THE COURT</p><h2>Sport can move<br><em>an entire ecosystem.</em></h2></div><p>Basketball is the starting point. The opportunity reaches into education, jobs, culture, technology, enterprise and international relationships.</p></div>
       <div class="impact-grid">
-        <div class="impact-card">
-          <h3>Economic & Social</h3>
-          <ul>
-            <li>Youth employment pathways</li>
-            <li>Sports tourism & events</li>
-            <li>Media production ecosystems</li>
-            <li>Local business growth</li>
-            <li>Infrastructure development</li>
-            <li>International investment</li>
-          </ul>
-        </div>
-        <div class="impact-card">
-          <h3>Technology & Innovation</h3>
-          <ul>
-            <li>Digital sports media platforms</li>
-            <li>AI-powered performance analytics</li>
-            <li>Livestream & broadcasting systems</li>
-            <li>Sports data & scouting tools</li>
-            <li>Creator economy platforms</li>
-            <li>Virtual fan engagement</li>
-          </ul>
-        </div>
-        <div class="impact-card">
-          <h3>U.S.–Africa Partnership</h3>
-          <ul>
-            <li>Sports diplomacy initiatives</li>
-            <li>Youth leadership programs</li>
-            <li>Educational exchange</li>
-            <li>Cultural collaboration</li>
-            <li>Technology partnerships</li>
-            <li>People-to-people engagement</li>
-          </ul>
-        </div>
+        <article><span>01</span><h3>Talent &amp; pathways</h3><p>Basketball development, coaching, scouting, athlete exposure and pathways to professional opportunities.</p></article>
+        <article><span>02</span><h3>Education &amp; leadership</h3><p>Mentorship, educational partnerships, youth leadership, life skills and positive identity development.</p></article>
+        <article><span>03</span><h3>Technology &amp; media</h3><p>Performance analytics, sports data, digital broadcasting, storytelling, creator opportunities and digital skills.</p></article>
+        <article><span>04</span><h3>Enterprise &amp; jobs</h3><p>Sports tourism, local business growth, entrepreneurship, merchandising, media production and investment.</p></article>
+        <article><span>05</span><h3>Culture &amp; diplomacy</h3><p>Pan-African identity, cultural exchange, sports diplomacy and Africa–America collaboration.</p></article>
+        <article><span>06</span><h3>Community &amp; inclusion</h3><p>Community outreach, gender inclusion and opportunities that extend beyond major sporting centres.</p></article>
       </div>
+    </section>
 
-      <div class="partnership-note">
-        <p>
-          <strong>Important:</strong> The Mirror League is not an imitation of any existing league. It is positioned as Africa and the world co-creating the future of basketball. Proposed relationships with global basketball organisations, brands and governments remain under development and will be announced only when formal.
-        </p>
-      </div>
-    </div>
-  </section>
+    <section class="tour section">
+      <div class="tour-back"></div><div class="tour-content"><p class="kicker">A CONTINENTAL EXPERIENCE</p><h2>THE AFRICA<br><em>MIRROR TOUR.</em></h2><p>A proposed travelling celebration of basketball and African creativity — bringing together showcase games, youth clinics, music, technology, entrepreneurship forums, AI and sports analytics workshops, fashion and creator culture.</p><a class="btn-gold" href="#contact">Explore collaboration <b>↗</b></a></div>
+      <div class="tour-list"><span>01 / SHOWCASE GAMES</span><span>02 / YOUTH CLINICS</span><span>03 / MUSIC & CULTURE</span><span>04 / TECH & INNOVATION</span><span>05 / ENTREPRENEURSHIP</span><span>06 / CREATOR ECONOMY</span></div>
+    </section>
 
-  <!-- Founder -->
-  <section class="section founder">
-    <div class="container">
-      <div class="founder-grid">
-        <div class="founder-text">
-          <p class="eyebrow">Founder & Vision Architect</p>
-          <h2>Brian Odoch Emmanuel</h2>
-          <blockquote>
-            “Africa already possesses some of the greatest basketball talent on Earth. The Mirror exists to build the systems, infrastructure, partnerships and global platforms needed to reveal that greatness to the world.”
-          </blockquote>
-          <p class="founder-role">Founder & Vision Architect, The Mirror League</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section class="innovation section">
+      <div class="section-index">05 / THE DIGITAL COURT</div>
+      <div class="section-title"><div><p class="kicker">TECHNOLOGY & INNOVATION</p><h2>Built for the<br><em>next era of sport.</em></h2></div><p>Technology is an enabler of athlete development, fan connection and a modern African sports economy.</p></div>
+      <div class="innovation-grid"><div><b>01</b><h3>Performance intelligence</h3><p>AI-powered performance analytics, sports data and scouting tools.</p></div><div><b>02</b><h3>Digital broadcasting</h3><p>Livestream systems, digital sports media and multilingual audience access.</p></div><div><b>03</b><h3>Creator economy</h3><p>Platforms and partnerships for African basketball storytellers and creators.</p></div><div><b>04</b><h3>Fan experiences</h3><p>Virtual engagement and future possibilities such as interactive viewing and digital collectibles.</p></div></div>
+      <p class="status-note">These are strategic development areas and future possibilities, not a statement that all services are currently operational.</p>
+    </section>
 
-  <!-- Contact -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">Connect</p>
-        <h2>Be part of the reflection.</h2>
-        <p class="lead">For partnership inquiries, institutional engagement, media or youth programmes, reach the founding team directly.</p>
+    <section class="roadmap section" id="roadmap">
+      <div class="section-index">06 / THE JOURNEY</div>
+      <div class="section-title"><div><p class="kicker">A PHASED AFRICAN BUILD</p><h2>Build the foundations.<br><em>Then grow the game.</em></h2></div><p>The strategic plan deliberately sequences the work: establish legitimacy, prove the experience, build talent infrastructure, then expand continental competition.</p></div>
+      <div class="timeline">
+        <article><span>PHASE 01 · YEAR 1</span><h3>The Mirror Summit</h3><p>Introduce the vision, convene sports, government, education, technology and media partners, and build founding relationships.</p></article>
+        <article><span>PHASE 02 · YEAR 1</span><h3>Mirror Showcase Game</h3><p>Prove the concept through a high-quality exhibition event, youth engagement, entertainment and media storytelling.</p></article>
+        <article><span>PHASE 03 · YEAR 2</span><h3>Mirror Academy Network</h3><p>Develop regional youth programmes, coach development, scouting, digital training and women's academy pathways.</p></article>
+        <article><span>PHASE 04 · YEAR 3+</span><h3>Continental League Expansion</h3><p>Progress toward structured continental competition, broadcasting partnerships and a championship ecosystem.</p></article>
       </div>
+      <p class="status-note">The phases and dates are strategic targets from the May 2026 plan, not announcements of confirmed events, partners or operational launch dates.</p>
+    </section>
 
-      <div class="contact-card">
-        <div class="contact-details">
-          <div class="contact-item">
-            <span class="label">Email</span>
-            <a href="mailto:odoema@gmail.com">odoema@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <span class="label">Telephone</span>
-            <a href="tel:+256772121669">+256 772 121 669</a>
-          </div>
-          <div class="contact-item">
-            <span class="label">Location</span>
-            <span>Nakinyuguzi Upper, Luwafu, Makindye Division, Kampala, Uganda</span>
-          </div>
-          <div class="contact-item">
-            <span class="label">Domain</span>
-            <a href="https://themirrorleague.com" target="_blank" rel="noopener">themirrorleague.com</a>
-          </div>
-        </div>
-        <p class="contact-note">
-          Registered business name: MIRROR SPORTS LEAGUE · Arts, entertainment, recreation and sports activities
-        </p>
+    <section class="partnership section" id="partners">
+      <div class="partnership-bg"></div><div class="partnership-content"><p class="kicker">AFRICA & THE WORLD</p><h2>Co-create the<br><em>future of basketball.</em></h2><p>The Mirror League seeks collaboration with sports organisations, national federations, governments, educational institutions, technology companies, broadcasters, brands and community partners.</p>
+        <div class="partner-tags"><span>SPORTS & FEDERATIONS</span><span>EDUCATION</span><span>TECHNOLOGY</span><span>MEDIA & BROADCAST</span><span>GOVERNMENT</span><span>BRANDS</span><span>COMMUNITY</span></div>
+        <a class="btn-gold" href="#contact">Start a conversation <b>↗</b></a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="logo-mark">ML</span>
-        <span>THE MIRROR LEAGUE</span>
+    <section class="founder section">
+      <div class="founder-mark"><img src="assets/logo-small.png" alt="The Mirror League crest and wordmark"></div>
+      <div class="founder-copy"><p class="kicker">THE VISION BEHIND THE MOVEMENT</p><h2>Brian Odoch Emmanuel</h2><span class="founder-role">FOUNDER & VISION ARCHITECT</span><blockquote>“Africa already possesses some of the greatest basketball talent in the world. THE MIRROR exists to build the systems, culture, infrastructure, and global platforms needed to reveal that greatness to the world.”</blockquote><p class="signature">Brian Odoch Emmanuel</p></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-index">07 / CONNECT WITH THE LEAGUE</div>
+      <div class="contact-grid"><div><p class="kicker">LET'S BUILD WHAT COMES NEXT</p><h2>The future is<br><em>a team effort.</em></h2><p>For partnership enquiries, institutional collaboration, media, youth programmes or general information, connect with The Mirror League.</p><div class="contact-detail"><span>OFFICIAL EMAIL</span><a href="mailto:odoema@gmail.com">odoema@gmail.com ↗</a></div><div class="contact-detail"><span>OFFICIAL PHONE</span><a href="tel:+256772121669">+256 772 121 669 ↗</a></div><div class="contact-detail"><span>REGISTERED BUSINESS LOCATION</span><p>Nakinyuguzi Upper, Luwafu, Makindye Division, Kampala, Central Uganda</p></div><p class="legal-note">Registered business name: MIRROR SPORTS LEAGUE. The Mirror League is the public-facing brand and proposed Pan-African basketball ecosystem.</p></div>
+        <form class="contact-form" id="contact-form">
+          <label>Your name<input name="name" required autocomplete="name" placeholder="Full name"></label>
+          <label>Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+          <label>I'm interested in<select name="interest"><option>General enquiry</option><option>Strategic partnership</option><option>Basketball and youth development</option><option>Media and storytelling</option><option>Technology and innovation</option><option>Institutional collaboration</option></select></label>
+          <label>Message<textarea name="message" rows="5" required placeholder="Tell us how you would like to connect"></textarea></label>
+          <button class="btn-gold" type="submit">Prepare email <b>↗</b></button><p class="form-status" id="form-status">Your message will be prepared in your email application. No information is submitted to a server by this form.</p>
+        </form>
       </div>
-      <p class="footer-tagline">We Are The Mirror. We Are The Future.</p>
-      <p class="footer-copy">© 2026 The Mirror League. All rights reserved. Vision and intellectual property of Brian Odoch Emmanuel.</p>
-    </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-top"><a href="#home"><img src="assets/logo-small.png" alt="The Mirror League"></a><p>WE ARE THE MIRROR.<br><strong>WE ARE THE FUTURE.</strong></p><a href="#home" class="backtop">BACK TO TOP ↑</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> The Mirror League. All rights reserved.</span><span>EXCELLENCE · UNITY · INNOVATION · IDENTITY · OPPORTUNITY</span><span>BUILT IN AFRICA. SEEN BY THE WORLD.</span></div>
   </footer>
-
-  <script src="js/main.js"></script>
+  <script src="assets/app.js"></script>
 </body>
 </html>

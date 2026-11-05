@@ -1,0 +1,280 @@
+:root{--navy:#071a35;--navy2:#0b2b55;--blue:#123d72;--gold:#d7b24f;--gold2:#f3d77b;--green:#16733d;--red:#d91e2b;--paper:#f3f2ee;--white:#fff;--muted:#aab5c4;--line:rgba(255,255,255,.16);--darkline:rgba(7,26,53,.16);--display:"Poppins",sans-serif;--sans:"Poppins",sans-serif;--head:"Poppins",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--paper);color:var(--navy);font-family:var(--sans);line-height:1.65}a{color:inherit;text-decoration:none}.topline{height:29px;background:#030e20;color:#e7c55e;display:flex;justify-content:space-between;align-items:center;padding:0 5.2%;font-size:8px;font-weight:700;letter-spacing:.2em}.header{height:88px;padding:0 5.2%;display:flex;align-items:center;justify-content:space-between;background:#071a35;border-bottom:2px solid var(--gold);position:sticky;top:0;z-index:20}.brand img{width:205px;height:76px;object-fit:contain;object-position:left center;display:block}.nav{display:flex;gap:24px}.nav a{font-size:10px;font-weight:700;letter-spacing:.04em;color:#e5eaf0;transition:.2s}.nav a:hover{color:var(--gold2)}.nav-cta{font-size:10px;font-weight:700;color:var(--navy);background:var(--gold);padding:13px 17px}.nav-cta span{margin-left:15px}.nav-toggle{display:none;background:none;color:white;border:0;font-size:25px}.hero{min-height:700px;position:relative;overflow:hidden;background:#06172e;color:white;display:flex;align-items:center}.hero-bg{position:absolute;inset:0;background:url("mirror-uniform-concept.webp") center 45%/cover no-repeat;opacity:.55;filter:saturate(.85)}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,14,32,.98) 0%,rgba(3,14,32,.86) 43%,rgba(3,14,32,.2) 100%),linear-gradient(0deg,rgba(3,14,32,.6),transparent 40%)}.hero:after{content:"";position:absolute;right:-7%;top:12%;width:54vw;height:54vw;border:1px solid rgba(215,178,79,.3);border-radius:50%;box-shadow:0 0 0 35px rgba(215,178,79,.035),0 0 0 90px rgba(215,178,79,.025);pointer-events:none}.hero-content{position:relative;z-index:2;margin-left:10%;padding:75px 0;max-width:680px}.eyebrow,.kicker{font-size:9px;font-weight:700;letter-spacing:.22em;color:var(--gold);margin:0 0 22px}.eyebrow i{display:inline-block;width:24px;height:2px;background:var(--gold);vertical-align:middle;margin-right:10px}.hero h1{font:800 clamp(64px,8.4vw,116px)/.82 var(--display);letter-spacing:.015em;margin:0 0 27px}.hero h1 em{font-style:normal;color:var(--gold2);text-shadow:0 4px 25px rgba(215,178,79,.17)}.hero-lead{max-width:485px;font-size:14px;color:#d5dce6;line-height:1.8}.hero-actions{display:flex;gap:28px;align-items:center;margin-top:32px}.btn-gold{display:inline-flex;align-items:center;justify-content:space-between;gap:32px;background:linear-gradient(110deg,#c99c32,#f1d67c);color:#071a35;padding:15px 19px;border:0;font:700 10px var(--sans);cursor:pointer;letter-spacing:.05em;transition:.2s}.btn-gold:hover{filter:brightness(1.08);transform:translateY(-2px)}.btn-gold b{font-size:17px}.btn-ghost{font-size:10px;font-weight:700;color:white}.btn-ghost b{color:var(--gold);margin-left:14px}.hero-side{position:absolute;z-index:2;right:5%;top:28%;display:flex;flex-direction:column;align-items:center;gap:13px;color:var(--gold);font-size:8px;letter-spacing:.18em;writing-mode:vertical-rl}.hero-side span:first-child{font:700 24px var(--display);writing-mode:horizontal-tb}.hero-bottom{position:absolute;z-index:2;bottom:28px;left:5.2%;right:5.2%;display:flex;align-items:center;gap:18px;font-size:8px;letter-spacing:.2em;color:#d9e0e9}.hero-bottom .line{height:1px;background:linear-gradient(90deg,var(--gold),transparent);flex:1}.ticker{overflow:hidden;background:var(--gold);color:#071a35;padding:12px 0;white-space:nowrap;font:700 12px var(--display);letter-spacing:.15em}.ticker div{animation:marquee 36s linear infinite;width:max-content}.ticker b{padding:0 25px;color:#fff}@keyframes marquee{to{transform:translateX(-25%)}}
+.section{padding:105px 10%}.section-index{font-size:9px;font-weight:700;letter-spacing:.2em;color:#a17b24}.intro{display:grid;grid-template-columns:.55fr 2fr;gap:7%;background:var(--paper)}.intro-main{max-width:850px}.kicker{color:#9a741d}.intro h2,.philosophy h2,.africa h2,.section-title h2,.development h2,.partnership h2,.contact h2{font:700 clamp(39px,5vw,68px)/1.02 var(--head);letter-spacing:-.06em;margin:0 0 26px}.intro h2 em,.philosophy h2 em,.africa h2 em,.section-title h2 em,.development h2 em,.partnership h2 em,.contact h2 em{font-style:normal;color:#b68d32}.large-copy{font:500 18px/1.65 var(--head);color:#33445b;max-width:780px}.intro-main>p:not(.kicker):not(.large-copy){max-width:740px;color:#647080;font-size:13px}.quote-band{margin-top:38px;border-left:3px solid var(--gold);padding:8px 25px;display:flex;gap:18px;align-items:center}.quote-band span{font:800 70px/.7 "Poppins",sans-serif;color:#c5a24b}.quote-band p{font:700 18px var(--head);margin:0}.mission-vision{display:grid;grid-template-columns:1fr 1fr;background:var(--navy);color:#fff}.mv-card{padding:70px 12%;border-top:1px solid rgba(215,178,79,.4)}.mv-card+ .mv-card{border-left:1px solid rgba(215,178,79,.4)}.label{font-size:9px;letter-spacing:.2em;color:var(--gold);font-weight:700}.mv-card h3{font:700 clamp(27px,3vw,40px)/1.1 var(--head);margin:22px 0}.mv-card h3 em{font-style:normal;color:var(--gold2)}.mv-card p{font-size:12px;color:#c3cbd5;max-width:490px}
+.philosophy{background:#0a2345;color:white}.philosophy-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:10%;margin-top:45px}.philosophy h2{font-size:clamp(38px,4.5vw,60px)}.body-copy{font-size:13px;color:#c0cad7;max-width:520px}.values{border-top:1px solid var(--line)}.values article{display:grid;grid-template-columns:45px 1fr 20px;gap:15px;align-items:center;padding:17px 0;border-bottom:1px solid var(--line)}.values article>b{font:700 16px var(--display);color:var(--gold)}.values h3{font:700 18px var(--head);margin:0 0 2px}.values p{font-size:11px;color:#aab8c9;margin:0}.values article>span{color:var(--gold)}.africa{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center}.africa-image{min-height:550px;background:linear-gradient(0deg,rgba(3,14,32,.18),rgba(3,14,32,.08)),url("african-basketball-concept.webp") center/cover;position:relative}.image-stamp{position:absolute;bottom:0;left:0;background:var(--gold);color:var(--navy);padding:20px 26px;font:700 12px var(--display);letter-spacing:.16em}.image-stamp strong{font-size:30px}.africa-copy>p:not(.kicker){font-size:13px;color:#5e6a79}.check-list{list-style:none;padding:0;margin:24px 0}.check-list li{padding:11px 0;border-bottom:1px solid var(--darkline);font-size:12px;font-weight:600}.check-list li:before{content:"✦";color:#bd963c;margin-right:13px}.africa-copy .closing-line{border-left:2px solid var(--gold);padding-left:17px;font-weight:600;color:#243b57}
+.ecosystem{background:#e8ebef}.section-title{display:flex;justify-content:space-between;align-items:end;gap:40px;margin:42px 0 45px}.section-title>p{max-width:360px;color:#647080;font-size:13px;margin-bottom:9px}.section-title h2{margin-bottom:0}.layers{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#c7cdd4;border:1px solid #c7cdd4}.layer{background:#f7f8f9;padding:32px 27px;min-height:330px;display:flex;flex-direction:column}.layer-feature{background:var(--navy);color:#fff}.layer-no{font-size:9px;color:#9c7b30;letter-spacing:.18em;font-weight:700}.layer-icon{font-size:39px;color:var(--gold);margin:27px 0 20px}.layer h3{font:700 26px var(--head);margin:0 0 14px}.layer p{font-size:12px;color:#667384}.layer-feature p{color:#c1cbd8}.layer-tag{margin-top:auto;padding-top:24px;font-size:8px;letter-spacing:.15em;color:#a47e2b;font-weight:700}.status-note{font-size:10px;color:#7c8795;margin-top:20px}
+.development{display:grid;grid-template-columns:1fr 1fr;gap:9%;background:var(--navy);color:white;align-items:center}.development-photo{min-height:560px;background:url("african-basketball-concept.webp") center/cover}.development-content>p:not(.kicker){font-size:13px;color:#c1ccd9}.development h2{font-size:clamp(40px,4.8vw,62px)}.age-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(215,178,79,.45);margin:30px 0}.age-grid div{padding:15px 8px;border-right:1px solid rgba(215,178,79,.35);display:flex;flex-direction:column}.age-grid div:last-child{border:0}.age-grid strong{font:800 23px var(--display);color:var(--gold2)}.age-grid span{font-size:8px;color:#c1cbd9}.development .small-copy{font-size:10px;color:#aebaca}
+.impact{background:var(--paper)}.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--darkline);border-left:1px solid var(--darkline)}.impact-grid article{padding:27px 25px;min-height:220px;border-right:1px solid var(--darkline);border-bottom:1px solid var(--darkline)}.impact-grid article>span{font:700 17px var(--display);color:#ad862e}.impact-grid h3{font:700 20px var(--head);margin:22px 0 10px}.impact-grid p{font-size:11px;color:#677484}
+.tour{position:relative;overflow:hidden;display:grid;grid-template-columns:1.3fr .7fr;gap:8%;background:#071a35;color:#fff}.tour-back{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,16,34,.97),rgba(4,16,34,.65)),url("african-basketball-concept.webp") center/cover;opacity:.95}.tour-content,.tour-list{position:relative;z-index:1}.tour h2{font:800 clamp(56px,7vw,88px)/.88 var(--display);margin:0 0 25px}.tour h2 em{font-style:normal;color:var(--gold2)}.tour-content>p:not(.kicker){max-width:560px;color:#c7d0dc;font-size:13px;margin-bottom:28px}.tour-list{align-self:center;display:flex;flex-direction:column;border-top:1px solid rgba(215,178,79,.5)}.tour-list span{font-size:9px;letter-spacing:.14em;padding:16px 0;border-bottom:1px solid rgba(215,178,79,.35);color:#e1e6ed}
+.innovation{background:#e8ebef}.innovation-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.innovation-grid>div{border-top:2px solid var(--gold);padding:20px 10px 0 0}.innovation-grid b{font:700 18px var(--display);color:#a17b24}.innovation-grid h3{font:700 17px var(--head);margin:22px 0 10px}.innovation-grid p{font-size:11px;color:#667384}
+.roadmap{background:#071a35;color:#fff}.roadmap .section-index{color:var(--gold)}.roadmap .section-title>p{color:#aebaca}.roadmap .section-title h2{color:#fff}.roadmap .section-title h2 em{color:var(--gold2)}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(215,178,79,.5);margin-top:55px}.timeline article{padding:24px 22px 0 0;position:relative}.timeline article:before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--gold)}.timeline article span{font-size:8px;color:var(--gold);letter-spacing:.15em;font-weight:700}.timeline h3{font:700 21px var(--head);margin:22px 0 12px}.timeline p{font-size:11px;color:#b7c2d0}.roadmap .status-note{color:#8292a6}
+.partnership{position:relative;background:#0a2448;color:white;overflow:hidden}.partnership-bg{position:absolute;inset:0;background:url("mirror-uniform-concept.webp") center/cover;opacity:.18;filter:grayscale(1)}.partnership-content{position:relative;max-width:800px}.partnership h2{font-size:clamp(44px,5.6vw,72px)}.partnership-content>p:not(.kicker){max-width:650px;color:#c3cbd7;font-size:13px}.partner-tags{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}.partner-tags span{border:1px solid rgba(215,178,79,.55);padding:9px 12px;color:#f0d47c;font-size:8px;letter-spacing:.12em}
+.founder{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%;align-items:center;background:#e8ebef}.founder-mark{background:#071a35;min-height:300px;display:grid;place-items:center;padding:25px}.founder-mark img{width:100%;max-width:430px}.founder h2{font:700 clamp(32px,4vw,50px) var(--head);margin:0 0 7px}.founder-role{font-size:8px;letter-spacing:.2em;color:#a17b24;font-weight:700}.founder blockquote{font:500 18px/1.6 var(--head);color:#34465c;margin:30px 0 18px}.signature{font:italic 500 18px "Poppins",sans-serif;color:#a17b24}
+.contact{background:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:10%;margin-top:40px}.contact-grid>div>p:not(.kicker){max-width:470px;font-size:13px;color:#637080}.contact h2{font-size:clamp(42px,5vw,64px)}.contact-detail{border-top:1px solid var(--darkline);padding:15px 0;display:grid;grid-template-columns:1fr 1.4fr;gap:12px}.contact-detail span{font-size:8px;letter-spacing:.15em;color:#9b782a;font-weight:700}.contact-detail a,.contact-detail p{font-size:11px;margin:0;color:#233c5a}.legal-note{font-size:9px!important;color:#8a929d!important;margin-top:25px}.contact-form{display:grid;gap:15px}.contact-form label{font-size:9px;letter-spacing:.1em;font-weight:700}.contact-form input,.contact-form textarea,.contact-form select{display:block;width:100%;padding:13px;margin-top:7px;border:1px solid #d5dbe2;background:#f8f9fa;border-radius:0;font:12px var(--sans);color:var(--navy)}.contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{outline:2px solid var(--gold)}.contact-form .btn-gold{justify-self:start}.form-status{font-size:9px;color:#87919d;margin:0}
+.footer{background:#030e20;color:#fff;padding:45px 8% 20px;border-top:2px solid var(--gold)}.footer-top{display:flex;align-items:center;justify-content:space-between;padding-bottom:35px}.footer-top img{width:220px;height:90px;object-fit:contain}.footer-top p{font:700 14px/1.5 var(--display);letter-spacing:.13em;color:#d6dce5}.footer-top p strong{color:var(--gold)}.backtop{font-size:8px;letter-spacing:.15em;color:var(--gold)}.footer-bottom{border-top:1px solid rgba(255,255,255,.16);padding-top:17px;display:flex;justify-content:space-between;gap:20px;color:#8d9bad;font-size:8px;letter-spacing:.08em}
+@media(max-width:1000px){.nav{gap:13px}.nav a{font-size:9px}.nav-cta{display:none}.section{padding:85px 7%}.hero-content{margin-left:7%}.intro{grid-template-columns:.35fr 1.65fr}.philosophy-grid{gap:6%}.age-grid strong{font-size:19px}}
+@media(max-width:700px){.topline{font-size:7px;padding:0 4%}.header{height:72px;padding:0 5%}.brand img{width:170px;height:65px}.nav-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;padding:22px 7%;background:#071a35;border-top:1px solid var(--gold);flex-direction:column;gap:18px}.nav.open{display:flex}.nav a{font-size:12px}.hero{min-height:670px}.hero-bg{background-position:58% center}.hero-content{margin:0;padding:75px 7%}.hero h1{font-size:72px}.hero-side{display:none}.hero-overlay{background:linear-gradient(90deg,rgba(3,14,32,.96),rgba(3,14,32,.5))}.hero-actions{align-items:flex-start;flex-direction:column;gap:20px}.section{padding:70px 7%}.intro,.philosophy-grid,.africa,.development,.contact-grid,.founder{grid-template-columns:1fr;gap:30px}.intro{gap:24px}.intro h2,.philosophy h2,.africa h2,.section-title h2,.development h2,.partnership h2,.contact h2{font-size:42px}.mission-vision{grid-template-columns:1fr}.mv-card{padding:45px 8%}.mv-card+.mv-card{border-left:0}.africa-image,.development-photo{min-height:350px}.section-title{display:block;margin:32px 0}.section-title>p{margin-top:20px}.layers{grid-template-columns:1fr}.layer{min-height:280px}.development{gap:30px}.age-grid{grid-template-columns:repeat(2,1fr)}.age-grid div:nth-child(2){border-right:0}.age-grid div:nth-child(-n+2){border-bottom:1px solid rgba(215,178,79,.35)}.impact-grid{grid-template-columns:1fr 1fr}.impact-grid article{padding:20px 15px;min-height:220px}.tour{grid-template-columns:1fr;gap:35px}.tour h2{font-size:66px}.tour-list{max-width:500px}.innovation-grid{grid-template-columns:1fr 1fr;gap:25px}.timeline{grid-template-columns:1fr 1fr;row-gap:30px}.timeline article{padding:18px 18px 0 0}.founder-mark{min-height:220px}.founder-mark img{max-width:320px}.contact-detail{grid-template-columns:1fr;gap:4px}.footer-top{flex-wrap:wrap;gap:15px}.footer-top img{width:180px;height:75px}.footer-top p{font-size:12px}.footer-bottom{flex-direction:column;gap:9px}.ticker{font-size:10px}}
+@media(max-width:390px){.hero h1{font-size:62px}.impact-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.hero-bottom{font-size:7px}.topline span:last-child{display:none}}
+
+
+/* THE MIRROR LEAGUE — premium visual refinement */
+:root{--navy:#07172e;--navy2:#0b2850;--blue:#174d83;--gold:#caa24a;--gold2:#f0d58b;--paper:#f5f3ee;--green:#167344;--red:#c92c38;--display:"Poppins",sans-serif;--sans:"Poppins",sans-serif;--head:"Poppins",sans-serif}
+html{scroll-padding-top:100px}
+body{background:var(--paper);letter-spacing:.005em}
+.topline{height:30px;background:#030d1d;color:#d9c18a;border-bottom:1px solid rgba(202,162,74,.25);font-size:9px;letter-spacing:.2em}
+.header{height:88px;padding:0 clamp(22px,6vw,100px);background:rgba(5,20,41,.96);border-bottom:1px solid rgba(202,162,74,.35);backdrop-filter:blur(16px);box-shadow:0 10px 35px rgba(0,0,0,.12)}
+.brand img{width:205px;height:72px;object-fit:contain;filter:drop-shadow(0 4px 12px rgba(0,0,0,.22))}
+.nav{gap:clamp(14px,2vw,29px)}.nav a{font-size:10px;letter-spacing:.08em;color:#dce3ec;transition:color .2s}.nav a:hover{color:var(--gold2)}
+.nav-cta{padding:13px 17px;border:1px solid rgba(240,213,139,.6);border-radius:2px;color:#f6e5b8;font-size:9px;letter-spacing:.1em;text-transform:uppercase;transition:.25s}.nav-cta:hover{background:var(--gold);color:#07172e}
+.hero{min-height:min(850px,calc(100svh - 30px));background:#06152b;isolation:isolate}
+.hero-bg{background-image:linear-gradient(90deg,rgba(3,13,29,.98) 0%,rgba(3,13,29,.88) 42%,rgba(3,13,29,.32) 76%,rgba(3,13,29,.2) 100%),linear-gradient(0deg,rgba(3,13,29,.72),transparent 40%),url("mirror-uniform-concept.webp");background-size:cover,cover,auto 112%;background-position:center,center,78% 36%;background-repeat:no-repeat;opacity:1;filter:none}
+.hero-overlay{background:radial-gradient(ellipse at 75% 42%,transparent 0%,rgba(3,13,29,.14) 42%,rgba(3,13,29,.5) 100%);opacity:1}
+.hero-content{max-width:760px;margin-left:clamp(7%,10vw,170px);padding-top:clamp(95px,12vh,150px);padding-bottom:125px}
+.eyebrow{display:inline-flex;align-items:center;gap:11px;padding:9px 13px;border:1px solid rgba(240,213,139,.35);background:rgba(5,20,41,.42);color:#ead59d;font-size:9px;letter-spacing:.17em;backdrop-filter:blur(8px)}
+.eyebrow i{width:7px;height:7px;background:var(--green);box-shadow:0 0 0 4px rgba(22,115,68,.2)}
+.hero h1{font-size:clamp(72px,9.5vw,138px);line-height:.79;letter-spacing:-.045em;margin:30px 0 28px;text-shadow:0 8px 40px rgba(0,0,0,.22)}
+.hero h1 em{color:var(--gold2);font-style:normal;text-shadow:0 0 35px rgba(202,162,74,.18)}
+.hero-lead{max-width:560px;color:#d5deea;font-size:clamp(14px,1.25vw,17px);line-height:1.8}
+.btn-gold{display:inline-flex;align-items:center;gap:26px;padding:16px 21px;background:linear-gradient(135deg,#e2c477,#bd9139);color:#08182e;border:1px solid #f0d58b;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 12px 30px rgba(0,0,0,.16);transition:transform .2s,box-shadow .2s}.btn-gold:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(0,0,0,.24)}
+.btn-ghost{display:inline-flex;align-items:center;gap:15px;padding:14px 0;color:#fff;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid rgba(240,213,139,.55)}
+.hero-side{right:clamp(22px,4vw,60px);color:#e2c477}.hero-bottom{left:clamp(7%,10vw,170px);right:clamp(7%,10vw,170px);font-size:9px;letter-spacing:.2em;color:#e3d3a8}.hero-bottom .line{background:linear-gradient(90deg,var(--gold),rgba(202,162,74,.08))}
+.ticker{background:#0a2850;color:#e8d5a5;border-block:1px solid rgba(202,162,74,.4);font-size:11px;letter-spacing:.19em;padding:17px 0}.ticker b{color:#3eae75;margin:0 19px}
+.section{padding:clamp(76px,8vw,126px) clamp(22px,8vw,132px)}
+.section-index{font-size:9px;letter-spacing:.22em;color:#a17b31;font-weight:800}
+.kicker{font-size:9px;letter-spacing:.2em;color:#a17b31;font-weight:800;margin-bottom:17px}
+h2{letter-spacing:-.035em}h2 em{color:#b58a37;font-style:normal}
+.intro{grid-template-columns:.42fr 1.58fr;gap:7%;background:linear-gradient(135deg,#f7f5ef,#eeece5)}
+.intro h2,.philosophy h2,.africa h2,.section-title h2,.development h2,.partnership h2,.contact h2{font-size:clamp(43px,5.5vw,76px);line-height:1.02}
+.large-copy{font-size:clamp(17px,1.6vw,22px);line-height:1.7;color:#233b59;max-width:900px}
+.quote-band{margin-top:38px;padding:23px 28px;background:#0a2850;border-left:3px solid var(--gold);box-shadow:0 15px 36px rgba(7,23,46,.08)}.quote-band p{color:#f3e5c2;font:600 20px var(--head)}.quote-band span{color:var(--gold2)}
+.mission-vision{background:#07172e;gap:0}.mv-card{padding:clamp(44px,6vw,86px) clamp(28px,8vw,120px);background:linear-gradient(145deg,#0a2850,#07172e)}.mv-card+.mv-card{border-left:1px solid rgba(202,162,74,.28);background:linear-gradient(145deg,#0b2444,#061326)}.mv-card h3{font-size:clamp(28px,3vw,42px);line-height:1.2}.mv-card p{max-width:530px;color:#bdc9d8;font-size:13px;line-height:1.85}.label{color:var(--gold2);letter-spacing:.2em}
+.philosophy{background:#fff}.philosophy-grid{gap:9%}.body-copy{font-size:14px;line-height:1.9;color:#566477}.values{border-top:1px solid #d9d5cb}.values article{padding:19px 0;border-bottom:1px solid #d9d5cb;transition:padding .2s}.values article:hover{padding-left:10px}.values article b{color:#b58a37}.values article h3{font-size:17px}.values article p{font-size:11px;color:#667384}
+.africa{background:#f0eee8;gap:8%;align-items:center}.africa-image{min-height:600px;background:linear-gradient(0deg,rgba(4,15,31,.42),rgba(4,15,31,.02)),url("african-basketball-concept.webp") center 44%/cover;box-shadow:18px 18px 0 #d7c9a5}.image-stamp{background:rgba(6,22,43,.9);border:1px solid rgba(240,213,139,.65);backdrop-filter:blur(8px)}.visual-caption{position:absolute;left:16px;bottom:15px;padding:8px 11px;background:rgba(4,15,31,.78);border:1px solid rgba(240,213,139,.4);color:#f0dcae;font-size:8px;letter-spacing:.15em;font-weight:700}
+.ecosystem{background:#e8e9e7}.section-title{margin:35px 0 50px}.section-title>p{max-width:400px;font-size:14px;line-height:1.8}.layers{gap:12px;background:transparent;border:0}.layer{padding:36px 31px;min-height:365px;background:#fff;border:1px solid #d8d7d0;box-shadow:0 12px 30px rgba(7,23,46,.04);transition:transform .25s,box-shadow .25s}.layer:hover{transform:translateY(-7px);box-shadow:0 22px 42px rgba(7,23,46,.1)}.layer-feature{background:linear-gradient(155deg,#0c315d,#06172e);border-color:#b58a37;box-shadow:0 15px 35px rgba(7,23,46,.16)}.layer h3{font-size:29px}.layer p{font-size:13px;line-height:1.8}.layer-icon{width:54px;height:54px;border:1px solid rgba(202,162,74,.5);border-radius:50%;display:grid;place-items:center;font-size:28px}
+.development{gap:8%;background:linear-gradient(125deg,#07172e,#0b2c54);padding-top:clamp(70px,8vw,115px);padding-bottom:clamp(70px,8vw,115px)}.development-photo{min-height:650px;position:relative;background:url("mirror-uniform-concept.webp") center 25%/cover;border:1px solid rgba(240,213,139,.45);box-shadow:20px 20px 0 rgba(202,162,74,.13)}.development-content>p:not(.kicker){font-size:14px;line-height:1.85}.age-grid{border-color:rgba(240,213,139,.5)}.age-grid div{padding:18px 12px}.age-grid strong{font-size:28px}.age-grid span{font-size:9px}.development .small-copy{font-size:11px;line-height:1.8}
+.impact{background:#fff}.impact-grid{border:0;gap:12px}.impact-grid article{border:1px solid #e2dfd6;background:#faf9f6;min-height:235px;padding:30px;transition:transform .2s,border-color .2s}.impact-grid article:hover{transform:translateY(-5px);border-color:#c9a24c}.impact-grid h3{font-size:21px}.impact-grid p{font-size:12px;line-height:1.8}
+.tour{background:#06172d;padding-top:clamp(80px,9vw,135px);padding-bottom:clamp(80px,9vw,135px)}.tour-back{background-image:linear-gradient(90deg,rgba(4,16,34,.98) 5%,rgba(4,16,34,.82) 50%,rgba(4,16,34,.48)),url("african-basketball-concept.webp");background-position:center,center 42%;background-size:cover;opacity:1}.tour h2{font-size:clamp(58px,8vw,106px);letter-spacing:-.04em}.tour-content>p:not(.kicker){font-size:14px;line-height:1.85}.tour-list span{font-size:10px;padding:18px 0}.innovation{background:#ecebe6}.innovation-grid{gap:14px}.innovation-grid>div{background:#f8f7f3;border:1px solid #dedbd1;border-top:3px solid var(--gold);padding:24px 20px;min-height:215px}.innovation-grid h3{font-size:19px}.innovation-grid p{font-size:12px;line-height:1.8}
+.roadmap{background:linear-gradient(135deg,#07172e,#0b2b52)}.timeline{gap:12px;border:0}.timeline article{padding:25px 22px;background:rgba(255,255,255,.045);border:1px solid rgba(202,162,74,.28);min-height:250px}.timeline article:before{top:-5px;left:22px}.timeline h3{font-size:23px}.timeline p{font-size:12px;line-height:1.8}
+.partnership{background:#092346}.partnership-bg{background-image:linear-gradient(90deg,rgba(6,22,43,.94),rgba(6,22,43,.76)),url("mirror-uniform-concept.webp");background-position:center,75% 25%;background-size:cover,auto 130%;opacity:1;filter:none}.partnership-content{max-width:850px}.partnership-content>p:not(.kicker){font-size:14px;line-height:1.9}.partner-tags span{font-size:9px;padding:11px 14px;background:rgba(3,14,30,.22)}
+.founder{background:#efeee9;gap:9%}.founder-mark{background:linear-gradient(145deg,#0b2d56,#06162d);border:1px solid rgba(202,162,74,.45);box-shadow:15px 15px 0 #d8cba9}.founder-mark img{max-width:440px}.founder blockquote{font-size:clamp(17px,1.6vw,22px);line-height:1.7}.founder h2{letter-spacing:-.04em}
+.contact{background:#fff}.contact-grid{gap:9%}.contact-form{padding:clamp(22px,3vw,40px);background:#f5f4ef;border:1px solid #e1ded4;box-shadow:0 16px 45px rgba(7,23,46,.06)}.contact-form label{font-size:10px;letter-spacing:.08em}.contact-form input,.contact-form textarea,.contact-form select{border:1px solid #d7d5cd;background:#fff;border-radius:2px;padding:14px;font-size:13px}.contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{outline:2px solid rgba(202,162,74,.45);border-color:#bd9139}
+.footer{padding:55px clamp(22px,8vw,132px) 22px;background:#030d1c;border-top:3px solid var(--gold)}.footer-top img{width:245px;height:100px}.footer-bottom{font-size:9px;letter-spacing:.1em}
+@media(max-width:1000px){.hero-content{margin-left:7%}.hero-bg{background-position:center,center,75% 35%}.header{padding:0 5%}.nav{gap:12px}.nav a{font-size:9px}}
+@media(max-width:700px){.topline{height:27px;font-size:7px}.header{height:72px}.brand img{width:165px;height:62px}.nav{top:72px}.hero{min-height:720px}.hero-bg{background-image:linear-gradient(90deg,rgba(3,13,29,.97),rgba(3,13,29,.75) 58%,rgba(3,13,29,.38)),linear-gradient(0deg,rgba(3,13,29,.65),transparent 55%),url("mirror-uniform-concept.webp");background-size:cover,cover,auto 78%;background-position:center,center,85% 100%;opacity:1}.hero-content{padding:85px 7% 130px}.hero h1{font-size:clamp(64px,16vw,86px);line-height:.84}.hero-lead{max-width:95%;font-size:14px}.hero-bottom{left:7%;right:7%}.section{padding:72px 7%}.intro h2,.philosophy h2,.africa h2,.section-title h2,.development h2,.partnership h2,.contact h2{font-size:clamp(39px,10vw,52px)}.africa-image{min-height:420px;box-shadow:9px 9px 0 #d7c9a5}.development-photo{min-height:480px;max-height:520px;background-position:center 22%;box-shadow:9px 9px 0 rgba(202,162,74,.13)}.layers{grid-template-columns:1fr}.layer{min-height:unset}.impact-grid{grid-template-columns:1fr 1fr;gap:9px}.impact-grid article{padding:20px 16px;min-height:230px}.tour{grid-template-columns:1fr}.tour h2{font-size:clamp(58px,15vw,78px)}.timeline{grid-template-columns:1fr 1fr}.timeline article{min-height:unset}.innovation-grid{grid-template-columns:1fr 1fr}.founder-mark{box-shadow:9px 9px 0 #d8cba9}.footer-top img{width:190px}}
+@media(max-width:420px){.impact-grid,.innovation-grid,.timeline{grid-template-columns:1fr}.hero h1{font-size:61px}.hero{min-height:680px}.hero-bottom{font-size:7px}.topline span:last-child{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Typography system: all interface and editorial text uses Poppins weights. */
+html, body, button, input, select, textarea { font-family: "Poppins", sans-serif; }
+
+/* Responsive image handling: preserve the complete artwork and let each frame define its own crop. */
+.africa-image,.development-photo,.tour-back,.partnership-bg{
+  background-size:contain!important;background-position:center center!important;background-repeat:no-repeat!important;
+}
+.africa-image,.development-photo{background-color:#081b35;min-width:0;overflow:hidden}
+.hero-carousel{min-height:clamp(680px, min(86vh, 900px), 900px);display:block;isolation:isolate}
+.hero-slides,.hero-slide{position:absolute;inset:0}
+.hero-slide{display:flex;align-items:center;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .8s ease,visibility .8s ease}
+.hero-slide.is-active{opacity:1;visibility:visible;pointer-events:auto;z-index:1}
+.hero-slide .hero-content{width:min(43%,620px);margin-left:9%;padding:110px 0 125px;z-index:4}
+.hero-slide .hero-content h1{font-size:clamp(54px,6.1vw,88px);line-height:.93;max-width:100%;overflow-wrap:anywhere}
+.slide-overline{margin:0 0 14px;color:var(--gold2);font-size:clamp(10px,.9vw,13px);font-weight:700;letter-spacing:.24em}
+.hero-visual{position:absolute;right:2.5%;top:4%;bottom:8%;width:51%;display:flex;align-items:center;justify-content:center;z-index:1;pointer-events:none}
+.hero-visual img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center center;filter:drop-shadow(0 24px 38px rgba(0,0,0,.28))}
+.hero-slide:nth-child(2) .hero-visual,.hero-slide:nth-child(4) .hero-visual{width:42%;right:6%}
+.hero-slide:nth-child(2) .hero-visual img,.hero-slide:nth-child(4) .hero-visual img{object-position:center center}
+.hero-overlay{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(90deg,rgba(3,14,32,.99) 0%,rgba(3,14,32,.94) 34%,rgba(3,14,32,.68) 55%,rgba(3,14,32,.1) 100%),linear-gradient(0deg,rgba(3,14,32,.72),transparent 34%)}
+.hero-side{z-index:5;right:3.4%;top:24%;font-size:8px}
+.hero-controls{position:absolute;z-index:8;left:9%;bottom:66px;display:flex;align-items:center;gap:13px}
+.hero-arrow,.hero-pause,.hero-dot{appearance:none;border:1px solid rgba(241,214,124,.55);background:rgba(4,17,36,.58);color:#f3d77b;cursor:pointer}
+.hero-arrow,.hero-pause{width:35px;height:35px;display:grid;place-items:center;font:600 16px "Poppins",sans-serif}
+.hero-arrow:hover,.hero-pause:hover,.hero-dot:hover{background:var(--gold);color:var(--navy)}
+.hero-dots{display:flex;align-items:center;gap:8px;padding:0 5px}
+.hero-dot{width:8px;height:8px;border-radius:50%;padding:0;transition:width .25s ease,background .25s ease}
+.hero-dot.is-active{width:27px;border-radius:9px;background:var(--gold);border-color:var(--gold)}
+.hero-pause{font-size:12px}
+.hero-bottom{z-index:5}
+.hero-slide .hero-actions{margin-top:28px}
+.hero-slide .hero-lead{max-width:470px}
+.hero-slide .eyebrow{font-size:9px}
+.hero-slide .hero-content h1 em{color:var(--gold2)}
+/* Use complete images in editorial image panels; no fixed-height cover crop. */
+.africa-image{background-size:cover,contain!important;background-position:center,center!important;min-height:clamp(340px,45vw,570px);aspect-ratio:1.28/1}
+.development-photo{background-size:contain!important;min-height:clamp(390px,48vw,610px);aspect-ratio: .78/1}
+.tour-back,.partnership-bg{background-size:cover,contain!important;background-position:center,right center!important;opacity:1}
+.brand img,.footer-top img,.founder-mark img{object-fit:contain;object-position:center;max-width:100%;height:auto}
+img{max-width:100%}
+@media(max-width:1000px){
+ .hero-slide .hero-content{margin-left:7%;width:50%}
+ .hero-visual{right:0;width:48%}
+ .hero-controls{left:7%}
+ .hero-slide .hero-content h1{font-size:clamp(50px,7vw,70px)}
+}
+@media(max-width:700px){
+ .hero-carousel{min-height:850px}
+ .hero-slide{align-items:flex-start}
+ .hero-visual,.hero-slide:nth-child(2) .hero-visual,.hero-slide:nth-child(4) .hero-visual{top:0;right:0;bottom:auto;width:100%;height:43%;opacity:.65}
+ .hero-visual img{object-fit:contain;object-position:center top;filter:drop-shadow(0 12px 22px rgba(0,0,0,.2))}
+ .hero-overlay{background:linear-gradient(180deg,rgba(3,14,32,.08) 0%,rgba(3,14,32,.35) 22%,rgba(3,14,32,.92) 42%,rgba(3,14,32,.99) 100%)}
+ .hero-slide .hero-content{width:100%;margin:0;padding:300px 7% 145px}
+ .hero-slide .hero-content h1{font-size:clamp(48px,13vw,70px);line-height:.93;letter-spacing:-.035em}
+ .hero-slide .hero-lead{max-width:100%;font-size:13px;line-height:1.65}
+ .hero-slide .eyebrow{font-size:8px;letter-spacing:.15em;margin-bottom:14px}
+ .slide-overline{font-size:10px;margin-bottom:10px}
+ .hero-controls{left:7%;bottom:64px;gap:8px}
+ .hero-arrow,.hero-pause{width:32px;height:32px}
+ .hero-dots{gap:6px}
+ .hero-dot{width:7px;height:7px}
+ .hero-dot.is-active{width:21px}
+ .hero-side{display:none}
+ .hero-bottom{font-size:7px;left:7%;right:7%;bottom:22px}
+ .africa-image{min-height:0;aspect-ratio:4/3;background-size:contain!important}
+ .development-photo{min-height:0;aspect-ratio:3/4;background-size:contain!important}
+ .tour-back,.partnership-bg{background-position:center,center!important}
+}
+@media(max-width:390px){
+ .hero-carousel{min-height:880px}
+ .hero-slide .hero-content{padding-top:285px}
+ .hero-slide .hero-content h1{font-size:47px}
+ .hero-controls{bottom:65px}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero-slide{transition:none!important}
+}
+
+/* Each slide owns its overlay so it cannot veil the carousel content. */
+.hero-slide>.hero-overlay{z-index:2}
+.hero-slide>.hero-visual{z-index:1}
+.hero-slide>.hero-content{position:relative;z-index:4}
+
+/* Tablet hero: switch to a stacked composition before text and artwork can collide. */
+@media (min-width:701px) and (max-width:900px){
+  .hero-carousel{min-height:820px}
+  .hero-slide{align-items:flex-start}
+  .hero-visual,.hero-slide:nth-child(2) .hero-visual,.hero-slide:nth-child(4) .hero-visual{top:0;right:0;bottom:auto;width:100%;height:47%;opacity:.62}
+  .hero-visual img{object-fit:contain;object-position:center top}
+  .hero-overlay{background:linear-gradient(180deg,rgba(3,14,32,.12) 0%,rgba(3,14,32,.42) 28%,rgba(3,14,32,.96) 54%,rgba(3,14,32,.99) 100%)}
+  .hero-slide .hero-content{width:100%;margin:0;padding:330px 7% 145px}
+  .hero-slide .hero-content h1{font-size:clamp(48px,7.5vw,66px);line-height:.94}
+  .hero-slide .hero-lead{max-width:620px}
+  .hero-side{display:none}
+  .hero-controls{left:7%;bottom:64px}
+  .hero-bottom{left:7%;right:7%;bottom:22px}
+}
+@media (min-width:701px) and (max-width:900px){.hero-carousel{min-height:920px}}
+
+/* ===== LAYOUT & IMAGE FIXES (final overrides) ===== */
+img{max-width:100%;height:auto}
+figure{margin:0}
+
+/* Hero: text left, framed artwork right. Image is never cropped, stretched or veiled. */
+.hero:after{display:none}
+.hero-carousel{min-height:clamp(700px,92vh,880px)}
+.hero-slide{align-items:center}
+.hero-slide>.hero-overlay{background:linear-gradient(90deg,rgba(3,14,32,.98) 0%,rgba(3,14,32,.9) 38%,rgba(3,14,32,0) 62%)}
+.hero-slide .hero-content{position:relative;width:min(44%,600px);margin-left:max(5.2%,calc((100% - 1240px)/2));padding:100px 0 140px}
+.hero-slide .hero-content h1{font-size:clamp(48px,5.6vw,84px);line-height:.95;overflow-wrap:normal;word-break:normal}
+.hero-visual{position:absolute;z-index:3;top:50%;right:max(7%,calc((100% - 1240px)/2 + 2%));bottom:auto;transform:translateY(-52%);width:46%;height:min(66%,560px);display:flex;align-items:center;justify-content:center}
+.hero-visual img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;border:1px solid rgba(240,213,139,.5);box-shadow:0 30px 60px rgba(0,0,0,.45),14px 14px 0 rgba(202,162,74,.14);background:#081b35}
+.hero-visual img.art-wide{width:100%;height:auto;aspect-ratio:850/665;max-height:100%;object-fit:cover}
+.hero-visual img.art-tall{height:100%;width:auto;aspect-ratio:306/548}
+.hero-slide:nth-child(n) .hero-visual{width:46%;right:max(7%,calc((100% - 1240px)/2 + 2%))}
+.hero-side{right:max(14px,1.6%);top:50%;transform:translateY(-50%);z-index:6}
+.hero-controls{left:max(5.2%,calc((100% - 1240px)/2))}
+.hero-bottom{left:max(5.2%,calc((100% - 1240px)/2));right:max(5.2%,calc((100% - 1240px)/2))}
+
+/* Editorial image frames: exact aspect ratios, no overlap with copy, no letterbox bars */
+.africa{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,7vw,90px);align-items:center}
+.africa-image{position:relative;width:100%;min-height:0;aspect-ratio:850/665;background:#081b35!important;box-shadow:16px 16px 0 #d7c9a5;overflow:hidden;min-width:0}
+.africa-image>img{display:block;width:100%;height:100%;object-fit:cover}
+.africa-image .image-stamp{z-index:2;bottom:auto;top:0;left:0}
+.africa-image .visual-caption{z-index:2;bottom:14px;left:14px;right:auto}
+.africa-copy{min-width:0}
+.development{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,7vw,90px);align-items:center}
+.development-photo{position:relative;width:100%;max-width:400px;min-height:0;max-height:none;aspect-ratio:306/548;justify-self:center;background:#081b35!important;border:1px solid rgba(240,213,139,.45);box-shadow:16px 16px 0 rgba(202,162,74,.16);overflow:hidden}
+.development-photo>img{display:block;width:100%;height:100%;object-fit:cover}
+.development-photo .visual-caption{z-index:2;bottom:14px;left:14px;right:14px;width:max-content;max-width:calc(100% - 28px)}
+.development-content{min-width:0}
+h2{overflow-wrap:break-word}
+
+/* Tour + partnership backgrounds: artwork anchored to the right, faded into the navy panel */
+.tour-back,.partnership-bg{background-repeat:no-repeat!important;background-color:#06172d}
+.tour-back{background-image:linear-gradient(90deg,#06172d 0%,#06172d 36%,rgba(6,23,45,.9) 58%,rgba(6,23,45,.78) 100%),url("african-basketball-concept.webp")!important;background-size:cover,auto 100%!important;background-position:center,right center!important}
+.partnership-bg{background-image:linear-gradient(90deg,#092346 0%,#092346 45%,rgba(9,35,70,.8) 70%,rgba(9,35,70,.6) 100%),url("mirror-uniform-portrait.webp")!important;background-size:cover,auto 100%!important;background-position:center,right center!important;opacity:1!important;filter:none!important}
+
+/* Cards / grids: equal heights, aligned content */
+.layers,.impact-grid,.innovation-grid,.timeline{align-items:stretch}
+.layer{min-height:0}
+.age-grid div{align-items:flex-start}
+.values article>span{justify-self:end}
+.values article{align-items:center}
+.values article>div{min-width:0}
+.philosophy-grid{align-items:start}
+.founder-mark{aspect-ratio:auto;min-height:0;padding:clamp(24px,4vw,48px)}
+.founder-mark img{width:100%;max-width:400px;height:auto}
+.section-title{align-items:flex-end}
+.footer-top img{width:210px;height:auto}
+.footer-bottom{flex-wrap:wrap}
+
+/* Tablet */
+@media(max-width:1000px){
+  .hero-slide .hero-content{width:48%;margin-left:5.2%}
+  .hero-visual,.hero-slide:nth-child(n) .hero-visual{width:42%;right:5.2%}
+  .hero-side{display:none}
+  .hero-slide .hero-content h1{font-size:clamp(42px,6vw,60px)}
+}
+@media(max-width:900px){
+  .hero-carousel{min-height:940px}
+  .hero-slide{align-items:flex-start}
+  .hero-slide>.hero-overlay{background:linear-gradient(180deg,rgba(3,14,32,0) 0%,rgba(3,14,32,0) 38%,rgba(3,14,32,.96) 48%,rgba(3,14,32,.99) 100%)}
+  .hero-visual,.hero-slide:nth-child(n) .hero-visual{position:absolute;top:28px;right:0;left:0;bottom:auto;transform:none;width:auto;height:340px;margin:0 7%}
+  .hero-slide .hero-content{width:100%;margin:0;padding:410px 7% 150px}
+  .hero-slide .hero-content h1{font-size:clamp(44px,8vw,64px)}
+  .hero-controls{left:7%}.hero-bottom{left:7%;right:7%}
+  .africa,.development{grid-template-columns:minmax(0,1fr)}
+  .africa-image{max-width:640px}
+  .development-photo{max-width:420px;justify-self:start}
+}
+@media(max-width:700px){
+  .hero-carousel{min-height:880px}
+  .hero-visual,.hero-slide:nth-child(n) .hero-visual{top:22px;height:260px;margin:0 7%}
+  .hero-slide .hero-content{padding:320px 7% 150px}
+  .hero-slide .hero-content h1{font-size:clamp(40px,12.5vw,60px)}
+  .hero-slide .eyebrow{margin-bottom:12px}
+  .africa-image{aspect-ratio:850/665;min-height:0;box-shadow:8px 8px 0 #d7c9a5}
+  .development-photo{aspect-ratio:306/548;max-width:360px;box-shadow:8px 8px 0 rgba(202,162,74,.16)}
+  .tour-back{background-size:cover,auto 55%!important;background-position:center,right bottom!important}
+  .partnership-bg{background-size:cover,auto 60%!important;background-position:center,right bottom!important;opacity:.6!important}
+  .section-title{display:block}
+  .footer-top{justify-content:flex-start}
+}
+@media(max-width:390px){
+  .hero-carousel{min-height:900px}
+  .hero-slide .hero-content h1{font-size:40px}
+}
+
+/* Contrast + stamp fixes */
+.philosophy{color:var(--navy)}
+.philosophy h2{color:var(--navy)}
+.philosophy .values h3{color:var(--navy)}
+.africa-image .image-stamp{top:auto;left:auto;right:0;bottom:0;color:var(--gold2);background:rgba(6,22,43,.92);padding:14px 20px;line-height:1.2}
+.africa-image .image-stamp strong{display:block;font-size:26px;color:#fff}
+.hero-visual img.art-tall{height:100%;width:auto}
+@media(max-width:700px){.development-photo{max-width:300px}}
+
+/* Partnership: portrait fades smoothly into the navy panel (no hard edge) */
+.partnership-bg{background:none!important;opacity:1!important}
+.partnership-bg::before{content:"";position:absolute;top:0;bottom:0;right:0;width:min(46%,640px);background:url("mirror-uniform-portrait.webp") center 18%/cover no-repeat;opacity:.55;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 55%);mask-image:linear-gradient(90deg,transparent 0%,#000 55%)}
+@media(max-width:700px){.partnership-bg::before{width:100%;opacity:.2;-webkit-mask-image:none;mask-image:none}}
+
+@media(max-width:900px){
+  .hero-visual img.art-wide{width:auto;height:100%;max-width:100%;max-height:100%;aspect-ratio:850/665;object-fit:cover}
+  .hero-visual img.art-tall{height:100%;width:auto}
+}
+@media(max-width:700px){
+  .africa-image .visual-caption{display:none}
+  .africa-image .image-stamp{padding:10px 14px;font-size:10px}
+  .africa-image .image-stamp strong{font-size:20px}
+  .development-photo .visual-caption{font-size:7px}
+}
+@media(min-width:701px) and (max-width:900px){.hero-carousel{min-height:1000px}}
