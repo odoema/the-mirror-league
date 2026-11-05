@@ -1343,3 +1343,12 @@ html,body{overflow-x:hidden}
 @media(prefers-reduced-motion:reduce){
  .hero-carousel .hero-slides{transition:none!important}
 }
+
+
+/* Motion polish: confident, smooth full-screen campaign transitions. */
+.hero-carousel .hero-slides{
+  transition:transform 1.12s cubic-bezier(.65,0,.35,1)!important;
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-carousel .hero-slides{transition:none!important}
+}
