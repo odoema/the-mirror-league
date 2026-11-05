@@ -765,3 +765,39 @@ figure{position:relative;min-width:0}
   .development-photo{width:min(100%,360px);aspect-ratio:auto!important}
   .africa-image>img,.development-photo>img{width:100%!important;height:auto!important}
 }
+
+
+/* ===== AFRICA FEATURE ART — tall portrait presentation, top-priority framing ===== */
+.africa-image{
+  position:relative!important;
+  width:min(100%,540px)!important;
+  max-width:540px!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:4 / 5!important;
+  overflow:hidden!important;
+  border-radius:26px!important;
+  background:#081b35!important;
+  box-shadow:14px 14px 0 rgba(203,166,83,.38)!important;
+}
+.africa-image>img{
+  position:absolute!important;
+  inset:0!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:cover!important;
+  object-position:center 12%!important;
+  aspect-ratio:auto!important;
+}
+.africa-image .image-stamp{z-index:2}
+.africa-image .visual-caption{z-index:2}
+@media(max-width:900px){
+  .africa-image{width:min(100%,560px)!important;aspect-ratio:4 / 5!important}
+}
+@media(max-width:700px){
+  .africa-image{width:100%!important;max-width:520px!important;aspect-ratio:4 / 5!important}
+  .africa-image>img{object-position:center 10%!important}
+}
