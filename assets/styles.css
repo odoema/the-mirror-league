@@ -1156,3 +1156,52 @@ figure{position:relative;min-width:0}
 .hero-carousel .hero-slide .eyebrow{
   display:none!important;
 }
+
+
+/* ===== FULL-BLEED UNSPLASH HERO PHOTOGRAPHY =====
+   Each slide now uses one full-viewport basketball photograph. Text stays above
+   the image with a navy gradient for contrast; no side-by-side image panel. */
+.hero-carousel .hero-slide .hero-visual{
+  position:absolute!important;inset:0!important;
+  top:0!important;right:0!important;bottom:0!important;left:0!important;
+  width:100%!important;height:100%!important;
+  min-width:0!important;min-height:0!important;
+  margin:0!important;padding:0!important;
+  display:block!important;overflow:hidden!important;
+  z-index:1!important;border:0!important;transform:none!important;
+}
+.hero-carousel .hero-slide .hero-visual::before,
+.hero-carousel .hero-slide .hero-visual::after{
+  display:none!important;content:none!important;
+}
+.hero-carousel .hero-slide .hero-visual img,
+.hero-carousel .hero-slide .hero-visual img.art-wide,
+.hero-carousel .hero-slide .hero-visual img.art-tall{
+  position:absolute!important;inset:0!important;
+  display:block!important;width:100%!important;height:100%!important;
+  min-width:100%!important;min-height:100%!important;
+  max-width:none!important;max-height:none!important;
+  object-fit:cover!important;object-position:center 38%!important;
+  margin:0!important;padding:0!important;border:0!important;
+  border-radius:0!important;
+  filter:brightness(.68) saturate(.88) contrast(1.06)!important;
+}
+.hero-carousel .hero-slide .hero-overlay{
+  position:absolute!important;inset:0!important;
+  z-index:2!important;pointer-events:none!important;
+  background:
+    linear-gradient(90deg,rgba(3,13,29,.94) 0%,rgba(3,13,29,.82) 30%,rgba(3,13,29,.54) 57%,rgba(3,13,29,.28) 100%),
+    linear-gradient(0deg,rgba(3,13,29,.76) 0%,transparent 35%,rgba(3,13,29,.18) 100%)!important;
+}
+.hero-carousel .hero-slide .hero-content{z-index:4!important}
+@media(max-width:700px){
+  .hero-carousel .hero-slide .hero-visual img,
+  .hero-carousel .hero-slide .hero-visual img.art-wide,
+  .hero-carousel .hero-slide .hero-visual img.art-tall{
+    object-position:center 35%!important;
+    filter:brightness(.52) saturate(.86) contrast(1.05)!important;
+  }
+  .hero-carousel .hero-slide .hero-overlay{
+    background:linear-gradient(180deg,rgba(3,13,29,.18) 0%,rgba(3,13,29,.48) 27%,rgba(3,13,29,.88) 58%,#030d1d 100%)!important;
+  }
+}
