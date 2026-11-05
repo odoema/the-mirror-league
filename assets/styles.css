@@ -1150,3 +1150,9 @@ figure{position:relative;min-width:0}
   .hero-carousel .hero-slide .hero-visual{height:220px!important}
   .hero-carousel .hero-slide .hero-content{padding-top:275px!important}
 }
+
+
+/* Remove the repeated philosophy index label from every hero slide. */
+.hero-carousel .hero-slide .eyebrow{
+  display:none!important;
+}
