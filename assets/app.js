@@ -3,13 +3,33 @@ const nav=document.querySelector(".nav");
 toggle?.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open));toggle.setAttribute("aria-label",open?"Close navigation":"Open navigation");});
 nav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");toggle?.setAttribute("aria-expanded","false");}));
 document.getElementById("year").textContent=new Date().getFullYear();
-document.getElementById("contact-form")?.addEventListener("submit",e=>{
+const contactForm=document.getElementById("contact-form");
+contactForm?.addEventListener("submit",async e=>{
   e.preventDefault();
-  const f=new FormData(e.currentTarget);
-  const subject=encodeURIComponent(`The Mirror League — ${f.get("interest")}`);
-  const body=encodeURIComponent(`Name: ${f.get("name")}\nEmail: ${f.get("email")}\nInterest: ${f.get("interest")}\n\n${f.get("message")}`);
-  document.getElementById("form-status").textContent="Opening your email application to send this enquiry to odoema@gmail.com.";
-  window.location.href=`mailto:odoema@gmail.com?subject=${subject}&body=${body}`;
+  const form=e.currentTarget;
+  const status=document.getElementById("form-status");
+  const button=form.querySelector('button[type="submit"]');
+  if(!form.reportValidity()) return;
+  if(form.elements._honey?.value) return;
+  button.disabled=true;
+  button.innerHTML='Sending enquiry…';
+  status.textContent="Sending your enquiry. Please keep this page open.";
+  try{
+    const response=await fetch("https://formsubmit.co/ajax/odoema@gmail.com",{
+      method:"POST",
+      headers:{"Accept":"application/json"},
+      body:new FormData(form)
+    });
+    const result=await response.json();
+    if(!response.ok||result.success===false) throw new Error(result.message||"Submission could not be confirmed.");
+    status.textContent="Thank you. Your enquiry has been submitted successfully. The Mirror League team will be in touch.";
+    form.reset();
+  }catch(error){
+    status.textContent="We could not confirm delivery. Please try again, or email odoema@gmail.com directly. ("+error.message+")";
+  }finally{
+    button.disabled=false;
+    button.innerHTML='Submit enquiry <b>↗</b>';
+  }
 });
 
 // Five-slide philosophy carousel. Pauses for user interaction, hidden tabs and reduced-motion preference.
