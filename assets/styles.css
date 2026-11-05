@@ -524,3 +524,138 @@ img{max-width:100%;height:auto}
 figure{position:relative;min-width:0}
 .africa-image .image-stamp{pointer-events:none}
 .visual-caption{max-width:calc(100% - 28px);overflow-wrap:anywhere}
+
+
+/* ===== HEADER REFINEMENT — balanced brand, clear navigation ===== */
+.topline{
+  height:34px;
+  min-height:34px;
+  padding-inline:clamp(20px,5.5vw,84px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  white-space:nowrap;
+  overflow:hidden;
+  font-size:8px;
+  letter-spacing:.17em;
+}
+.header{
+  height:108px;
+  min-height:108px;
+  padding:0 clamp(24px,5.2vw,78px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:clamp(18px,2.4vw,36px);
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+.header .brand{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  flex:0 0 300px;
+  width:300px;
+  height:100%;
+  min-width:0;
+  overflow:visible;
+}
+.header .brand img{
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain!important;
+  object-position:left center!important;
+  filter:drop-shadow(0 3px 10px rgba(0,0,0,.2));
+}
+.header .nav{
+  display:flex;
+  flex:1 1 auto;
+  min-width:0;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(13px,1.65vw,24px);
+}
+.header .nav a{
+  display:block;
+  flex:0 0 auto;
+  max-width:112px;
+  font-size:9px;
+  line-height:1.45;
+  letter-spacing:.045em;
+  text-align:center;
+  white-space:normal;
+}
+.header .nav-cta{
+  display:inline-flex;
+  flex:0 0 auto;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  min-width:136px;
+  min-height:48px;
+  padding:12px 18px;
+  line-height:1.35;
+  text-align:center;
+  white-space:normal;
+}
+.header .nav-cta span{margin:0}
+.header .nav-toggle{display:none;flex:0 0 auto}
+
+/* Switch to a deliberate compact menu before navigation becomes crowded. */
+@media(max-width:1080px){
+  .header{height:92px;min-height:92px;padding-inline:5%}
+  .header .brand{flex-basis:260px;width:260px}
+  .header .nav-toggle{
+    display:grid;
+    place-items:center;
+    width:46px;
+    height:46px;
+    border:1px solid rgba(240,213,139,.48);
+    border-radius:50%;
+    background:rgba(255,255,255,.04);
+    color:#f4dfaa;
+    cursor:pointer;
+  }
+  .header .nav{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    padding:22px 6% 26px;
+    background:rgba(4,17,35,.985);
+    border-top:1px solid rgba(203,166,83,.35);
+    border-bottom:1px solid rgba(203,166,83,.35);
+    box-shadow:0 18px 34px rgba(0,0,0,.24);
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+  }
+  .header .nav.open{display:flex}
+  .header .nav a{
+    max-width:none;
+    padding:13px 4px;
+    text-align:left;
+    font-size:11px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .header .nav a:last-child{border-bottom:0}
+  .header .nav-cta{margin-left:auto;min-width:130px}
+}
+@media(max-width:700px){
+  .topline{height:28px;min-height:28px;padding-inline:5%;font-size:7px;letter-spacing:.12em}
+  .header{height:76px;min-height:76px;padding-inline:5%;gap:12px}
+  .header .brand{flex:0 1 205px;width:205px;height:68px}
+  .header .brand img{object-position:left center!important}
+  .header .nav-cta{display:none}
+  .header .nav{top:100%}
+}
+@media(max-width:390px){
+  .header .brand{flex-basis:180px;width:180px}
+  .topline span:first-child{overflow:hidden;text-overflow:ellipsis}
+}
