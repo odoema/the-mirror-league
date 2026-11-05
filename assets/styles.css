@@ -1373,3 +1373,17 @@ html,body{overflow-x:hidden}
    background:linear-gradient(180deg,rgba(4,17,35,.08) 0%,rgba(4,17,35,.28) 24%,rgba(4,17,35,.88) 58%,#041123 100%)!important;
  }
 }
+
+
+/* Contact section: keep anchor headings clear of the sticky site header. */
+html{scroll-padding-top:150px}
+#contact{scroll-margin-top:150px}
+.contact{padding-top:clamp(120px,10vw,158px)!important}
+.form-honey{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.contact-form button[disabled]{opacity:.7;cursor:wait}
+.form-status{line-height:1.7}
+@media(max-width:700px){
+ html{scroll-padding-top:112px}
+ #contact{scroll-margin-top:112px}
+ .contact{padding-top:clamp(88px,18vw,116px)!important}
+}
