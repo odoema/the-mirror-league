@@ -659,3 +659,109 @@ figure{position:relative;min-width:0}
   .header .brand{flex-basis:180px;width:180px}
   .topline span:first-child{overflow:hidden;text-overflow:ellipsis}
 }
+
+
+/* ===== NAVIGATION TYPOGRAPHY — stronger Mirror League presence ===== */
+.header .nav{gap:clamp(14px,1.8vw,28px)}
+.header .nav a{
+  position:relative;
+  max-width:125px;
+  padding:12px 0;
+  color:#f0eadb;
+  font-size:10.5px;
+  font-weight:800;
+  line-height:1.45;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  text-shadow:0 1px 8px rgba(0,0,0,.18);
+  transition:color .2s ease,transform .2s ease;
+}
+.header .nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:100%;
+  bottom:3px;
+  height:2px;
+  background:linear-gradient(90deg,#cba653,#f0d995);
+  transition:right .22s ease;
+}
+.header .nav a:hover,
+.header .nav a:focus-visible{color:#f0d995;transform:translateY(-1px)}
+.header .nav a:hover::after,
+.header .nav a:focus-visible::after{right:0}
+.header .nav-cta{
+  min-width:150px;
+  min-height:52px;
+  padding:14px 21px;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  box-shadow:0 9px 24px rgba(203,166,83,.24);
+}
+@media(min-width:1081px){
+  .header .nav a{font-size:clamp(9.5px,.78vw,11.5px)}
+}
+@media(max-width:1080px){
+  .header .nav a{
+    max-width:none;
+    padding:15px 5px;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:.12em;
+  }
+  .header .nav a::after{bottom:7px;right:100%;max-width:72px}
+  .header .nav a:hover::after,
+  .header .nav a:focus-visible::after{right:calc(100% - 72px)}
+}
+@media(max-width:700px){
+  .header .nav a{font-size:12px;letter-spacing:.13em}
+}
+
+/* ===== EDITORIAL IMAGE FRAMES — remove square-like fixed proportions ===== */
+/* Let each image determine its own height. Keep the complete original artwork visible. */
+.africa-image,
+.development-photo{
+  display:block!important;
+  position:relative;
+  width:100%;
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  aspect-ratio:auto!important;
+  overflow:hidden;
+}
+.africa-image{max-width:650px;margin-inline:auto}
+.development-photo{max-width:440px;margin-inline:auto}
+.africa-image>img,
+.development-photo>img{
+  display:block!important;
+  position:relative!important;
+  inset:auto!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+.africa-image{background:#081b35!important}
+.development-photo{background:#081b35!important}
+.africa-image .image-stamp,
+.africa-image .visual-caption,
+.development-photo .visual-caption{z-index:2}
+@media(min-width:901px){
+  .africa-image{width:100%;max-width:650px}
+  .development-photo{width:100%;max-width:440px}
+}
+@media(max-width:900px){
+  .africa-image{width:100%;max-width:650px}
+  .development-photo{width:100%;max-width:420px}
+}
+@media(max-width:700px){
+  .africa-image{width:100%;max-width:100%;aspect-ratio:auto!important}
+  .development-photo{width:min(100%,360px);aspect-ratio:auto!important}
+  .africa-image>img,.development-photo>img{width:100%!important;height:auto!important}
+}
