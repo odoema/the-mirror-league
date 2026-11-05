@@ -17,8 +17,8 @@ contactForm?.addEventListener("submit",async e=>{
   try{
     const response=await fetch("https://formsubmit.co/ajax/odoema@gmail.com",{
       method:"POST",
-      headers:{"Accept":"application/json"},
-      body:new FormData(form)
+      headers:{"Accept":"application/json","Content-Type":"application/json"},
+      body:JSON.stringify(Object.fromEntries(new FormData(form).entries()))
     });
     const result=await response.json();
     if(!response.ok||result.success===false) throw new Error(result.message||"Submission could not be confirmed.");
