@@ -1257,3 +1257,35 @@ figure{position:relative;min-width:0}
 @media(max-width:700px){
   .header .brand{padding:5px 7px}
 }
+
+
+/* Horizontal full-screen hero slider: each panel occupies one viewport. */
+.hero-carousel{overflow:hidden!important}
+.hero-carousel .hero-slides{
+  position:absolute!important;
+  inset:0 auto 0 0!important;
+  display:flex!important;
+  flex-flow:row nowrap!important;
+  width:500%!important;
+  height:100%!important;
+  transform:translate3d(0,0,0);
+  transition:transform .95s cubic-bezier(.22,.72,.18,1)!important;
+  will-change:transform;
+}
+.hero-carousel .hero-slide{
+  position:relative!important;
+  inset:auto!important;
+  display:flex!important;
+  flex:0 0 20%!important;
+  width:20%!important;
+  min-width:0!important;
+  height:100%!important;
+  opacity:1!important;
+  visibility:visible!important;
+  transition:none!important;
+}
+.hero-carousel .hero-slide:not(.is-active){pointer-events:none!important}
+.hero-carousel .hero-slide.is-active{z-index:1!important}
+@media(prefers-reduced-motion:reduce){
+  .hero-carousel .hero-slides{transition:none!important}
+}
