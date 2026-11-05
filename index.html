@@ -222,12 +222,16 @@
     <section class="contact section" id="contact">
       <div class="section-index">07 / CONNECT WITH THE LEAGUE</div>
       <div class="contact-grid"><div><p class="kicker">LET'S BUILD WHAT COMES NEXT</p><h2>The future is<br><em>a team effort.</em></h2><p>For partnership enquiries, institutional collaboration, media, youth programmes or general information, connect with The Mirror League.</p><div class="contact-detail"><span>OFFICIAL EMAIL</span><a href="mailto:odoema@gmail.com">odoema@gmail.com ↗</a></div><div class="contact-detail"><span>OFFICIAL PHONE</span><a href="tel:+256772121669">+256 772 121 669 ↗</a></div><div class="contact-detail"><span>REGISTERED BUSINESS LOCATION</span><p>Nakinyuguzi Upper, Luwafu, Makindye Division, Kampala, Central Uganda</p></div><p class="legal-note">Registered business name: MIRROR SPORTS LEAGUE. The Mirror League is the public-facing brand and proposed Pan-African basketball ecosystem.</p></div>
-        <form class="contact-form" id="contact-form">
+        <form class="contact-form" id="contact-form" novalidate>
+          <input type="hidden" name="_subject" value="New enquiry — The Mirror League website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_url" value="https://themirrorleague.com/#contact">
+          <label class="form-honey" aria-hidden="true">Leave this field empty<input name="_honey" tabindex="-1" autocomplete="off"></label>
           <label>Your name<input name="name" required autocomplete="name" placeholder="Full name"></label>
           <label>Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
           <label>I'm interested in<select name="interest"><option>General enquiry</option><option>Strategic partnership</option><option>Basketball and youth development</option><option>Media and storytelling</option><option>Technology and innovation</option><option>Institutional collaboration</option></select></label>
           <label>Message<textarea name="message" rows="5" required placeholder="Tell us how you would like to connect"></textarea></label>
-          <button class="btn-gold" type="submit">Prepare email <b>↗</b></button><p class="form-status" id="form-status">Your message will be prepared in your email application. No information is submitted to a server by this form.</p>
+          <button class="btn-gold" type="submit">Submit enquiry <b>↗</b></button><p class="form-status" id="form-status" role="status" aria-live="polite">Your enquiry will be sent securely and a confirmation will appear here.</p>
         </form>
       </div>
     </section>
