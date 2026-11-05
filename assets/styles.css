@@ -1289,3 +1289,57 @@ figure{position:relative;min-width:0}
 @media(prefers-reduced-motion:reduce){
   .hero-carousel .hero-slides{transition:none!important}
 }
+
+
+/* TRUE full-screen carousel: move the entire slide panel as one unit. */
+html,body{overflow-x:hidden}
+.hero-carousel{
+  position:relative!important;
+  width:100%;
+  overflow:hidden!important;
+  isolation:isolate;
+}
+.hero-carousel .hero-slides{
+  position:absolute!important;
+  inset:0 auto 0 0!important;
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  width:500vw!important;
+  max-width:none!important;
+  height:100%!important;
+  margin:0!important;
+  padding:0!important;
+  gap:0!important;
+  transform:translate3d(0,0,0);
+  transition:transform 1s cubic-bezier(.76,0,.24,1)!important;
+  will-change:transform;
+}
+.hero-carousel .hero-slide{
+  position:relative!important;
+  inset:auto!important;
+  display:flex!important;
+  flex:0 0 100vw!important;
+  width:100vw!important;
+  min-width:100vw!important;
+  max-width:100vw!important;
+  height:100%!important;
+  min-height:100%!important;
+  margin:0!important;
+  opacity:1!important;
+  visibility:visible!important;
+  overflow:hidden!important;
+  transition:none!important;
+  transform:none!important;
+}
+.hero-carousel .hero-slide .hero-visual,
+.hero-carousel .hero-slide>.hero-overlay,
+.hero-carousel .hero-slide .hero-content{
+  /* These remain children of the same moving full-screen panel. */
+  box-sizing:border-box;
+}
+.hero-carousel .hero-slide:not(.is-active){pointer-events:none!important}
+.hero-carousel .hero-slide.is-active{pointer-events:auto!important}
+@media(prefers-reduced-motion:reduce){
+ .hero-carousel .hero-slides{transition:none!important}
+}
