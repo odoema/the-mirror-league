@@ -1457,3 +1457,8 @@ html{scroll-padding-top:150px}
     clear:both!important;
   }
 }
+
+/* Official contact channels and social links */
+.social-links{line-height:2.1!important}
+.social-links a{color:#233c5a;font-weight:600;text-decoration:none;white-space:nowrap}
+.social-links a:hover{color:#9b782a;text-decoration:underline}
