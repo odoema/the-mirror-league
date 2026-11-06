@@ -15,7 +15,7 @@ contactForm?.addEventListener("submit",async e=>{
   button.innerHTML='Sending enquiry…';
   status.textContent="Sending your enquiry. Please keep this page open.";
   try{
-    const response=await fetch("https://formsubmit.co/ajax/odoema@gmail.com",{
+    const response=await fetch("https://formsubmit.co/ajax/themirrorleague@gmail.com",{
       method:"POST",
       headers:{"Accept":"application/json","Content-Type":"application/json"},
       body:JSON.stringify(Object.fromEntries(new FormData(form).entries()))
@@ -25,7 +25,7 @@ contactForm?.addEventListener("submit",async e=>{
     status.textContent="Thank you. Your enquiry has been submitted successfully. The Mirror League team will be in touch.";
     form.reset();
   }catch(error){
-    status.textContent="We could not confirm delivery. Please try again, or email odoema@gmail.com directly. ("+error.message+")";
+    status.textContent="We could not confirm delivery. Please try again, or email themirrorleague@gmail.com directly. ("+error.message+")";
   }finally{
     button.disabled=false;
     button.innerHTML='Submit enquiry <b>↗</b>';
